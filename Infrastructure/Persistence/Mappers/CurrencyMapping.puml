@@ -1,0 +1,6 @@
+@startuml
+class CurrencyMapping <<static>> {
+    + {static} ToDomain(entity:CurrencyEntity) : Currency
+    + {static} ToEntity(domain:Currency) : CurrencyEntity
+}
+@enduml

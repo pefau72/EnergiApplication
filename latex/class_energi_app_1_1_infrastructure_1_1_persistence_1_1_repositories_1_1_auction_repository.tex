@@ -1,0 +1,67 @@
+\doxysection{Energi\+App.\+Infrastructure.\+Persistence.\+Repositories.\+Auction\+Repository Class Reference}
+\hypertarget{class_energi_app_1_1_infrastructure_1_1_persistence_1_1_repositories_1_1_auction_repository}{}\label{class_energi_app_1_1_infrastructure_1_1_persistence_1_1_repositories_1_1_auction_repository}\index{EnergiApp.Infrastructure.Persistence.Repositories.AuctionRepository@{EnergiApp.Infrastructure.Persistence.Repositories.AuctionRepository}}
+
+
+Inheritance diagram for Energi\+App.\+Infrastructure.\+Persistence.\+Repositories.\+Auction\+Repository:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{class_energi_app_1_1_infrastructure_1_1_persistence_1_1_repositories_1_1_auction_repository__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Energi\+App.\+Infrastructure.\+Persistence.\+Repositories.\+Auction\+Repository:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{class_energi_app_1_1_infrastructure_1_1_persistence_1_1_repositories_1_1_auction_repository__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_energi_app_1_1_infrastructure_1_1_persistence_1_1_repositories_1_1_auction_repository_acd807a1ddda33eea371a8088861e91b8}\label{class_energi_app_1_1_infrastructure_1_1_persistence_1_1_repositories_1_1_auction_repository_acd807a1ddda33eea371a8088861e91b8} 
+{\bfseries Auction\+Repository} (\doxymbox{\hyperlink{class_energi_app_1_1_infrastructure_1_1_persistence_1_1db_1_1_app_db_context}{App\+Db\+Context}} \doxymbox{\hyperlink{namespace_energi_app_1_1_infrastructure_1_1_persistence_1_1db}{db}})
+\item 
+\Hypertarget{class_energi_app_1_1_infrastructure_1_1_persistence_1_1_repositories_1_1_auction_repository_ad752157141473045d1eea87e491bc939}\label{class_energi_app_1_1_infrastructure_1_1_persistence_1_1_repositories_1_1_auction_repository_ad752157141473045d1eea87e491bc939} 
+async Task {\bfseries Add\+Async} (\doxymbox{\hyperlink{class_energi_app_1_1_infrastructure_1_1_persistence_1_1_entities_1_1_auction_entity}{Auction\+Entity}} entity)
+\item 
+async Task \doxymbox{\hyperlink{class_energi_app_1_1_infrastructure_1_1_persistence_1_1_repositories_1_1_auction_repository_ad8c16885c9b6ed046dc304dd9b4cbc11}{Save\+Changes\+Async}} ()
+\item 
+\Hypertarget{class_energi_app_1_1_infrastructure_1_1_persistence_1_1_repositories_1_1_auction_repository_aeba07b8cdd9dff1ddaddbff97731efff}\label{class_energi_app_1_1_infrastructure_1_1_persistence_1_1_repositories_1_1_auction_repository_aeba07b8cdd9dff1ddaddbff97731efff} 
+async Task {\bfseries Store\+Auctions\+Async} (IEnumerable$<$ \doxymbox{\hyperlink{class_energi_app_1_1_domain_1_1_auction}{Auction}} $>$ api\+Auctions)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{interface_energi_app_1_1_domain_1_1_repositories_1_1_i_auction_repository}{Energi\+App.\+Domain.\+Repositories.\+IAuction\+Repository}}}
+\begin{DoxyCompactItemize}
+\item 
+Task$<$ \doxymbox{\hyperlink{class_energi_app_1_1_domain_1_1_auction}{Auction}}?$>$ {\bfseries Get\+By\+Id\+Async} (Guid id, bool include\+Children=false)
+\item 
+Task$<$ IRead\+Only\+List$<$ \doxymbox{\hyperlink{class_energi_app_1_1_domain_1_1_auction}{Auction}} $>$ $>$ {\bfseries Get\+Open\+Async} ()
+\item 
+Task {\bfseries Add\+Async} (\doxymbox{\hyperlink{class_energi_app_1_1_domain_1_1_auction}{Auction}} auction)
+\item 
+Task {\bfseries Update\+Async} (\doxymbox{\hyperlink{class_energi_app_1_1_domain_1_1_auction}{Auction}} auction)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_energi_app_1_1_infrastructure_1_1_persistence_1_1_repositories_1_1_auction_repository_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_energi_app_1_1_infrastructure_1_1_persistence_1_1_repositories_1_1_auction_repository_ad8c16885c9b6ed046dc304dd9b4cbc11}\index{EnergiApp.Infrastructure.Persistence.Repositories.AuctionRepository@{EnergiApp.Infrastructure.Persistence.Repositories.AuctionRepository}!SaveChangesAsync@{SaveChangesAsync}}
+\index{SaveChangesAsync@{SaveChangesAsync}!EnergiApp.Infrastructure.Persistence.Repositories.AuctionRepository@{EnergiApp.Infrastructure.Persistence.Repositories.AuctionRepository}}
+\doxysubsubsection{\texorpdfstring{SaveChangesAsync()}{SaveChangesAsync()}}
+{\footnotesize\ttfamily \label{class_energi_app_1_1_infrastructure_1_1_persistence_1_1_repositories_1_1_auction_repository_ad8c16885c9b6ed046dc304dd9b4cbc11} 
+async Task Energi\+App.\+Infrastructure.\+Persistence.\+Repositories.\+Auction\+Repository.\+Save\+Changes\+Async (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Implements \doxymbox{\hyperlink{interface_energi_app_1_1_domain_1_1_repositories_1_1_i_auction_repository}{Energi\+App.\+Domain.\+Repositories.\+IAuction\+Repository}}.
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+C:\+/\+\+Users/\+peter/\+\+One\+Drive/\+\+Dokumenter/\+\+OD\+\_\+obj/\+\+Energi\+App/\+\+Infrastructure/\+\+Persistence/\+\+Repositories/\+Auction\+Repository.\+cs\end{DoxyCompactItemize}

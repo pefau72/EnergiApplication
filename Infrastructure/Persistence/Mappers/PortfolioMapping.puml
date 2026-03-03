@@ -1,0 +1,6 @@
+@startuml
+class PortfolioMapping <<static>> {
+    + {static} ToDomain(entity:PortfolioEntity) : Portfolio
+    + {static} ToEntity(domain:Portfolio) : PortfolioEntity
+}
+@enduml

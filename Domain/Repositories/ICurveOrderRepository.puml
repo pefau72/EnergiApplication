@@ -1,0 +1,10 @@
+@startuml
+interface ICurveOrderRepository {
+    GetByIdAsync(id:Guid) : Task<CurveOrder?>
+    GetOpenAsync() : Task<IReadOnlyList<CurveOrder>>
+    GetAllAsync() : Task<IEnumerable<CurveOrder>>
+    AddAsync(curveorder:CurveOrder) : Task
+    UpdateAsync(curveorder:CurveOrder) : Task
+    SaveChangesAsync() : Task
+}
+@enduml

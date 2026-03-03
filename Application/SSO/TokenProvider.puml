@@ -1,0 +1,11 @@
+@startuml
+class NordPoolTokenProvider <<sealed>> {
+    - <<readonly>> _sso : INordPoolSsoClient
+    - <<readonly>> _options : NordPoolSsoOptions
+    - _cached : TokenResponse?
+    - <<readonly>> _lock : SemaphoreSlim
+    + NordPoolTokenProvider(sso:INordPoolSsoClient, options:IOptions<NordPoolSsoOptions>)
+    + <<async>> GetAccessTokenAsync(ct:CancellationToken) : Task<string>
+}
+ITokenProvider <|-- NordPoolTokenProvider
+@enduml

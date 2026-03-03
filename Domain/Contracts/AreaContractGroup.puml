@@ -1,0 +1,6 @@
+@startuml
+class AreaContractGroup {
+    + AreaCode : string <<get>> <<set>>
+    + Contracts : IEnumerable<Contract> <<get>> <<set>>
+}
+@enduml

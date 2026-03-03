@@ -1,0 +1,7 @@
+@startuml
+class PortfolioNetVolume {
+    + Portfolio : string <<get>> <<set>>
+    + CompanyName : string <<get>> <<set>>
+    + AreaNetVolumes : List<AreaNetVolume> <<get>> <<set>>
+}
+@enduml

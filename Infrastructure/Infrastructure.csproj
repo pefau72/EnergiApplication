@@ -1,0 +1,44 @@
+﻿
+<Project Sdk="Microsoft.NET.Sdk">
+	
+
+	<PropertyGroup>
+		<RootNamespace>EnergiApp.Infrastructure</RootNamespace>
+		<OutputType>Library</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+	
+
+	<ItemGroup>
+	  <Compile Remove="Infrastructure\**" />
+	  <EmbeddedResource Remove="Infrastructure\**" />
+	  <None Remove="Infrastructure\**" />
+	</ItemGroup>
+	
+
+	<ItemGroup>
+	  <Compile Remove="Persistence\db\AuctionStorageService.cs" />
+	  <Compile Remove="Persistence\db\CurveOrderStorageService.cs" />
+	  <Compile Remove="Persistence\db\TradeStorageService.cs" />
+	  <Compile Remove="Persistence\Repositories\AuctionRepository.cs" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ExternalServices\" />
+    <Folder Include="Logging\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.3" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+
+
+</Project>

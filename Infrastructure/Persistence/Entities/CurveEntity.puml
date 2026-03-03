@@ -1,0 +1,6 @@
+@startuml
+class CurveEntity {
+    + ContractId : string <<get>> <<set>>
+    + CurvePoints : List<CurvePoint> <<get>> <<set>>
+}
+@enduml

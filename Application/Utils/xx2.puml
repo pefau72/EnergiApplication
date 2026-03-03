@@ -1,0 +1,15 @@
+@startuml
+class NordPoolApiOptions {
+    + BaseUrl : string <<get>> <<set>> = ""
+    + Username : string <<get>> <<set>> = ""
+    + Password : string <<get>> <<set>> = ""
+    + ClientId : string <<get>> <<set>> = ""
+    + ClientSecret : string <<get>> <<set>> = ""
+}
+class NordPoolSsoOptions <<sealed>> {
+    + ClientId : string <<get>> <<init>>
+    + ClientSecret : string <<get>> <<init>>
+    + Scope : string <<get>> <<init>> = "api.read"
+    + TokenEndpoint : string <<get>> <<init>>
+}
+@enduml

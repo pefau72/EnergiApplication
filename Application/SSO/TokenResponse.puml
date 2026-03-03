@@ -1,0 +1,10 @@
+@startuml
+class TokenResponse <<sealed>> {
+    + AccessToken : string <<get>> <<init>>
+    + ExpiresIn : int <<get>> <<init>>
+    + ExpiresAtUtc : DateTime <<get>> <<init>>
+    + ObtainedAt : DateTime <<get>> <<init>>
+    - {static} <<readonly>> SafetyMargin : TimeSpan
+    + IsExpired : bool <<get>>
+}
+@enduml

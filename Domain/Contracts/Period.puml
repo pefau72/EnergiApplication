@@ -1,0 +1,6 @@
+@startuml
+class Period {
+    + ContractId : string <<get>> <<set>>
+    + Volume : decimal <<get>> <<set>>
+}
+@enduml

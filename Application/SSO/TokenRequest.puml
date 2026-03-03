@@ -1,0 +1,10 @@
+@startuml
+class TokenRequest {
+    + GrantType : string <<get>> <<set>>
+    + Scope : string <<get>> <<set>>
+    + Username : string <<get>> <<set>>
+    + Password : string <<get>> <<set>>
+    + ClientID : string <<get>> <<set>>
+    + Client_secret : string <<get>> <<set>>
+}
+@enduml

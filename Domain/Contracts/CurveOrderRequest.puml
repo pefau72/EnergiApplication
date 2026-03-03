@@ -1,0 +1,9 @@
+@startuml
+class CurveOrderRequest {
+    + AuctionId : string <<get>> <<set>>
+    + Portfolio : string <<get>> <<set>>
+    + AreaCode : string <<get>> <<set>>
+    + Comment : string <<get>> <<set>>
+    + Curves : List<Curve> <<get>> <<set>>
+}
+@enduml

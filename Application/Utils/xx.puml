@@ -1,0 +1,8 @@
+@startuml
+class AuthenticatedHttpClientHandler <<sealed>> {
+    - <<readonly>> _tokenProvider : ITokenProvider
+    + AuthenticatedHttpClientHandler(tokenProvider:ITokenProvider)
+    # <<override>> <<async>> SendAsync(request:HttpRequestMessage, cancellationToken:CancellationToken) : Task<HttpResponseMessage>
+}
+DelegatingHandler <|-- AuthenticatedHttpClientHandler
+@enduml

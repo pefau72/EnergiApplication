@@ -1,0 +1,5 @@
+@startuml
+class OrdersResponse {
+    + CurveOrders : List<CurveOrder> <<get>> <<set>>
+}
+@enduml

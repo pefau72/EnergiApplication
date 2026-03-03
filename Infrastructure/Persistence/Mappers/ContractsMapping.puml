@@ -1,0 +1,6 @@
+@startuml
+class ContractsMapping <<static>> {
+    + {static} ToDomain(entity:ContractEntity) : Contract
+    + {static} ToEntity(domain:Contract) : ContractEntity
+}
+@enduml

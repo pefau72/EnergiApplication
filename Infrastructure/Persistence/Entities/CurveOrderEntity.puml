@@ -1,0 +1,17 @@
+@startuml
+class CurveOrderEntity {
+    + Id : Guid <<get>> <<set>>
+    + OrderId : string <<get>> <<set>>
+    + AreaCode : string <<get>> <<set>>
+    + Portfolio : string <<get>> <<set>>
+    + CurrencyCode : string <<get>> <<set>>
+    + AuctionId : Guid <<get>> <<set>>
+    + Modifier : string <<get>> <<set>>
+    + Modified : DateTime <<get>> <<set>>
+    + State : string <<get>> <<set>>
+    + Curves : List<CurveEntity> <<get>> <<set>>
+    + Comment : string <<get>> <<set>>
+    + CompanyName : string <<get>> <<set>>
+    + Version : int <<get>> <<set>>
+}
+@enduml

@@ -1,0 +1,5 @@
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\MinApp\Application_layer\obj\Debug\net10.0\2_Application_layer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\MinApp\Application_layer\obj\Debug\net10.0\2_Application_layer.AssemblyInfoInputs.cache
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\MinApp\Application_layer\obj\Debug\net10.0\2_Application_layer.AssemblyInfo.cs
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\MinApp\Application_layer\obj\Debug\net10.0\2_Application_layer.csproj.CoreCompileInputs.cache
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\MinApp\Application_layer\obj\Debug\net10.0\2_Application_layer.csproj.AssemblyReference.cache

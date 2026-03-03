@@ -1,0 +1,7 @@
+@startuml
+class ContractEntity {
+    + Id : string <<get>> <<set>>
+    + DeliveryStart : DateTime <<get>> <<set>>
+    + DeliveryEnd : DateTime <<get>> <<set>>
+}
+@enduml

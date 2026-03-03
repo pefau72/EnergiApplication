@@ -1,0 +1,25 @@
+@startuml
+class TradesSummary {
+    + AreaCode : string <<get>> <<set>>
+    + AuctionId : string <<get>> <<set>>
+    + OrderId : string <<get>> <<set>>
+    + CompanyName : string <<get>> <<set>>
+    + Portfolio : string <<get>> <<set>>
+    + CurrencyCode : string <<get>> <<set>>
+    + UserId : string <<get>> <<set>>
+    + OrderResultType : OrderResultType <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + ExclusiveGroup : string <<get>> <<set>>
+    + Trades : List<Trade> <<get>> <<set>>
+}
+class Trade {
+    + TradeId : string <<get>> <<set>>
+    + ContractId : string <<get>> <<set>>
+    + DeliveryStart : DateTime <<get>> <<set>>
+    + DeliveryEnd : DateTime <<get>> <<set>>
+    + Volume : decimal <<get>> <<set>>
+    + Price : decimal <<get>> <<set>>
+    + Side : TradeSide <<get>> <<set>>
+    + Status : AuctionResultState <<get>> <<set>>
+}
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+class AreaPrice {
+    + AreaCode : string <<get>> <<set>>
+    + Prices : List<CurrencyPrice> <<get>> <<set>>
+}
+@enduml

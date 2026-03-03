@@ -1,0 +1,8 @@
+@startuml
+class PricesResponse {
+    + Auction : string <<get>> <<set>>
+    + AuctionDeliveryStart : DateTime <<get>> <<set>>
+    + AuctionDeliveryEnd : DateTime <<get>> <<set>>
+    + Contracts : List<ContractPrice> <<get>> <<set>>
+}
+@enduml

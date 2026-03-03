@@ -1,0 +1,30 @@
+@startuml
+class ReasonabilityResultsInfo {
+    + Portfolio : string <<get>> <<set>>
+    + Area : string <<get>> <<set>>
+    + OrderApprovalState : OrderApprovalState <<get>> <<set>>
+    + Curves : IEnumerable<ValidatedCurve> <<get>> <<set>>
+    + ReferenceDay : string <<get>> <<set>>
+    + AuctionId : string <<get>> <<set>>
+    + OrderId : Guid <<get>> <<set>>
+    + ApprovalModifier : string <<get>> <<set>>
+    + ApprovalSource : ApprovalSource <<get>> <<set>>
+}
+class ValidatedCurve {
+    + Id : Guid <<get>> <<set>>
+    + TimeStep : int <<get>> <<set>>
+    + ContractId : string <<get>> <<set>>
+    + IsValid : bool <<get>> <<set>>
+    + ValidationMessage : string <<get>> <<set>>
+}
+enum OrderApprovalState {
+    Undefined,
+    Approved,
+    NotApproved,
+}
+enum ApprovalSource {
+    Automatic,
+    Operator,
+    Member,
+}
+@enduml

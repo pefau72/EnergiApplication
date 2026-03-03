@@ -1,0 +1,6 @@
+@startuml
+class AreaNetVolume {
+    + AreaCode : string <<get>> <<set>>
+    + NetVolumes : List<ContractNetVolume> <<get>> <<set>>
+}
+@enduml

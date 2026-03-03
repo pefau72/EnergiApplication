@@ -1,0 +1,23 @@
+@startuml
+!include .\\Persistence\db\AppDbContext.puml
+!include .\\Persistence\Entities\AuctionEntity.puml
+!include .\\Persistence\Entities\ContractEntity.puml
+!include .\\Persistence\Entities\CurrencyEntity.puml
+!include .\\Persistence\Entities\CurveEntity.puml
+!include .\\Persistence\Entities\CurveOrderEntity.puml
+!include .\\Persistence\Entities\CurveOrderPointEntity.puml
+!include .\\Persistence\Entities\CurverPointEntity.puml
+!include .\\Persistence\Entities\PortfolioEntity.puml
+!include .\\Persistence\Entities\TradeEntity.puml
+!include .\\Persistence\Mappers\AuctionMapping.puml
+!include .\\Persistence\Mappers\ContractsMapping.puml
+!include .\\Persistence\Mappers\CurrencyMapping.puml
+!include .\\Persistence\Mappers\PortfolioMapping.puml
+!include .\\obj\Debug\net10.0\.NETCoreApp,Version=v10.0.AssemblyAttributes.puml
+!include .\\obj\Debug\net10.0\4_Persistence_layer.AssemblyInfo.puml
+!include .\\obj\Debug\net10.0\4_Persistence_layer.GlobalUsings.g.puml
+!include .\\obj\Debug\net10.0\Infrastructure.AssemblyInfo.puml
+!include .\\obj\Debug\net10.0\Infrastructure.GlobalUsings.g.puml
+!include .\\obj\Debug\net10.0\Persistence_layer.AssemblyInfo.puml
+!include .\\obj\Debug\net10.0\Persistence_layer.GlobalUsings.g.puml
+@enduml

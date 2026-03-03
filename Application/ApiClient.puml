@@ -1,0 +1,15 @@
+@startuml
+interface INordPoolApiClient {
+    GetAuctionsAsync(closeBiddingFrom:DateTime, closeBiddingTo:DateTime) : Task<IEnumerable<Auction>>
+    GetTradesAsync(auctionId:string, portfolios:string[], areas:string[]) : Task<IEnumerable<TradesSummary>>
+    PostCurveOrderAsync(curveOrderRequest:CurveOrderRequest) : Task<CurveOrder>
+}
+interface INordPoolSsoClient {
+    PostTokenAsync(basicAuth:string, tokenRequest:TokenRequest) : Task<TokenResponse>
+}
+class AuctionApiClientExtensions <<static>> {
+    + {static} <<async>> PlaceCurveOrder(apiClient:INordPoolApiClient, curveOrder:CurveOrderRequest) : Task<CurveOrder>
+    - {static} ConstructApiException(exception:ApiException) : NordPoolApiException
+    + {static} <<async>> PostTokenAsync(authHeader:string, request:TokenRequest) : Task<TokenResponse>
+}
+@enduml

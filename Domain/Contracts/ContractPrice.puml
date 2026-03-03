@@ -1,0 +1,8 @@
+@startuml
+class ContractPrice {
+    + ContractId : string <<get>> <<set>>
+    + DeliveryStart : DateTime <<get>> <<set>>
+    + DeliveryEnd : DateTime <<get>> <<set>>
+    + Areas : List<AreaPrice> <<get>> <<set>>
+}
+@enduml

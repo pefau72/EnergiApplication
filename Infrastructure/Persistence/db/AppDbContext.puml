@@ -1,0 +1,11 @@
+@startuml
+class AppDbContext {
+    + AppDbContext(options:DbContextOptions<AppDbContext>)
+    + Auctions : DbSet<AuctionEntity> <<get>>
+    + Trades : DbSet<TradeEntity> <<get>>
+    + CurveOrders : DbSet<CurveOrderEntity> <<get>>
+    + CurveOrderPoints : DbSet<CurveOrderPointEntity> <<get>>
+    # <<override>> OnModelCreating(modelBuilder:ModelBuilder) : void
+}
+DbContext <|-- AppDbContext
+@enduml

@@ -1,0 +1,8 @@
+@startuml
+class NordPoolApiException {
+    + NordPoolApiException(message:string, httpStatusCode:HttpStatusCode)
+    + NordPoolApiException(message:string, innerException:Exception, httpStatusCode:HttpStatusCode)
+    + HttpStatusCode : HttpStatusCode <<get>> <<set>>
+}
+Exception <|-- NordPoolApiException
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+class BlockList {
+    + OrderId : string <<get>> <<set>>
+    + AreaCode : string <<get>> <<set>>
+    + Portfolio : string <<get>> <<set>>
+    + AuctionId : string <<get>> <<set>>
+    + Modifier : string <<get>> <<set>>
+    + CurrencyCode : string <<get>> <<set>>
+    + Modified : DateTime <<get>> <<set>>
+    + Blocks : List<Block> <<get>> <<set>>
+    + Comment : string <<get>> <<set>>
+    + CompanyName : string <<get>> <<set>>
+    + Version : int <<get>> <<set>>
+}
+@enduml

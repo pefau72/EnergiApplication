@@ -1,0 +1,7 @@
+@startuml
+class CurvePointEntity {
+    + Id : Guid <<get>> <<set>>
+    + Price : double <<get>> <<set>>
+    + Volume : double <<get>> <<set>>
+}
+@enduml

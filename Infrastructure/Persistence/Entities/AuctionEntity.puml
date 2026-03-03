@@ -1,0 +1,14 @@
+@startuml
+class AuctionEntity {
+    + Id : Guid <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + State : int <<get>> <<set>>
+    + CloseForBidding : DateTime <<get>> <<set>>
+    + DeliveryStart : DateTime <<get>> <<set>>
+    + DeliveryEnd : DateTime <<get>> <<set>>
+    + Contracts : List<ContractEntity> <<get>> <<set>>
+    + Currencies : List<CurrencyEntity> <<get>> <<set>>
+    + Portfolios : List<PortfolioEntity> <<get>> <<set>>
+    + RetrievedAtUtc : DateTime <<get>> <<set>>
+}
+@enduml

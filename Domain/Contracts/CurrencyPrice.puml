@@ -1,0 +1,7 @@
+@startuml
+class CurrencyPrice {
+    + CurrencyCode : string <<get>> <<set>>
+    + MarketPrice : decimal? <<get>> <<set>>
+    + Status : AuctionResultState <<get>> <<set>>
+}
+@enduml

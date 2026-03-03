@@ -1,0 +1,9 @@
+@startuml
+interface IAuctionRepository {
+    GetByIdAsync(id:Guid, includeChildren:bool) : Task<Auction?>
+    GetOpenAsync() : Task<IReadOnlyList<Auction>>
+    AddAsync(auction:Auction) : Task
+    UpdateAsync(auction:Auction) : Task
+    SaveChangesAsync() : Task
+}
+@enduml

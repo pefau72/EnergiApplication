@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace EnergiApp.Infrastructure.Persistence.Entities
+{
+    public class AuctionEntity
+    {
+        public Guid Id { get; set; }
+        public string Name { get; set; }
+        public int State { get; set; }
+        public DateTime CloseForBidding { get; set; }
+        public DateTime DeliveryStart { get; set; }
+        public DateTime DeliveryEnd { get; set; }
+        public List<ContractEntity> Contracts { get; set; } = new();
+        public List<CurrencyEntity> Currencies { get; set; } = new();
+        public List<PortfolioEntity> Portfolios { get; set; } = new();
+        
+        public DateTime RetrievedAtUtc { get; set; }
+
+    }
+
+
+
+}

@@ -1,0 +1,10 @@
+@startuml
+interface ITradeRepository {
+    GetAsync(id:Guid) : Task<Trade?>
+    GetOpenAsync() : Task<IReadOnlyList<Trade>>
+    GetAllAsync() : Task<IEnumerable<Trade>>
+    AddAsync(trade:Trade) : Task
+    UpdateAsync(trade:Trade) : Task
+    SaveChangesAsync() : Task
+}
+@enduml

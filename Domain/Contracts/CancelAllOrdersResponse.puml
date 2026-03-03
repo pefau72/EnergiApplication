@@ -1,0 +1,5 @@
+@startuml
+class CancelAllOrdersResponse {
+    + CancelledOrderIds : List<Guid> <<get>> <<set>>
+}
+@enduml

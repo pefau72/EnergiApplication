@@ -1,0 +1,6 @@
+@startuml
+class CurveOrderPatchRequest {
+    + Curves : List<Curve> <<get>> <<set>>
+    + Comment : string <<get>> <<set>>
+}
+@enduml

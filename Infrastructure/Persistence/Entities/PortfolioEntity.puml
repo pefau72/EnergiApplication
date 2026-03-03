@@ -1,0 +1,11 @@
+@startuml
+class PortfolioEntity {
+    + Name : string <<get>> <<set>>
+    + Id : string <<get>> <<set>>
+    + Currency : string <<get>> <<set>>
+    + CompanyId : string <<get>> <<set>>
+    + CompanyName : string <<get>> <<set>>
+    + Permission : PortfolioPermission <<get>> <<set>>
+    + Areas : List<PortfolioArea> <<get>> <<set>>
+}
+@enduml

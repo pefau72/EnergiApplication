@@ -1,0 +1,16 @@
+@startuml
+class Block {
+    + Modifier : string <<get>> <<set>>
+    + State : OrderStateType <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + Price : decimal <<get>> <<set>>
+    + MinimumAcceptanceRatio : decimal <<get>> <<set>>
+    + LinkedTo : string <<get>> <<set>>
+    + ExclusiveGroup : string <<get>> <<set>>
+    + Periods : IEnumerable<Period> <<get>> <<set>>
+    + IsSpreadBlock : bool <<get>> <<set>>
+    + IsLinkedBlock : bool <<get>>
+    + IsExclusiveGroup : bool <<get>>
+    + IsProfiledBlock : bool <<get>>
+}
+@enduml

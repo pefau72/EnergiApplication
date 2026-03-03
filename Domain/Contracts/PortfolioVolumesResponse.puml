@@ -1,0 +1,6 @@
+@startuml
+class PortfolioVolumesResponse {
+    + AuctionId : string <<get>> <<set>>
+    + PortfolioNetVolumes : List<PortfolioNetVolume> <<get>> <<set>>
+}
+@enduml

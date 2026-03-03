@@ -1,0 +1,34 @@
+@startuml
+class ConsoleHelper <<static>> {
+    - <<const>> Format : string = "yyyy-MM-ddTHH:mm:ssZ"
+    + {static} WriteAuctionsInfo(auctions:IEnumerable<Auction>) : void
+    + {static} WriteDetailedAuctionInfo(auction:Auction) : void
+    - {static} WriteCurrencyInfo(currency:Currency) : void
+    - {static} WritePortfolioInfo(portfolio:Portfolio) : void
+    + {static} WriteOrdersInfo(orders:OrdersResponse) : void
+    + {static} WriteCurveOrder(curveOrder:CurveOrder) : void
+    + {static} WriteCurveOrderRequest(curveOrderRequest:CurveOrderRequest) : void
+    - {static} WriteCurves(curveOrder:CurveOrder) : void
+    - {static} WriteCurves(curveOrderRequest:CurveOrderRequest) : void
+    + {static} RequestSelectedAuctionCommand(auction:Auction) : CommandType
+    + {static} WriteTradesInfo(trades:IEnumerable<TradesSummary>) : void
+    - {static} WriteTradeSummary(tradesSummary:TradesSummary, orderResultType:OrderResultType) : void
+    - {static} WriteTrades(trades:IEnumerable<Trade>) : void
+    + {static} WritePricesInfo(prices:PricesResponse) : void
+    - {static} WritePrice(contract:ContractPrice) : void
+    + {static} WriteAuctionContractsInfo(auction:AuctionMultiResolutionResponse) : void
+    - {static} WriteContracts(contracts:IEnumerable<Contract>) : void
+}
+enum CommandType {
+    None,
+    Orders,
+    GetAllCurveOrderVersions,
+    Trades,
+    Prices,
+    PortfolioVolumes,
+    PlaceCurve,
+    Auctions,
+    Exit,
+    AuctionContracts,
+}
+@enduml

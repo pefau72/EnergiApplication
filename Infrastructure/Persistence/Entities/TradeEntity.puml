@@ -1,0 +1,13 @@
+@startuml
+class TradeEntity {
+    + Id : Guid <<get>> <<set>>
+    + TradeId : string <<get>> <<set>>
+    + ContractId : string <<get>> <<set>>
+    + DeliveryStart : DateTime <<get>> <<set>>
+    + DeliveryEnd : DateTime <<get>> <<set>>
+    + Volume : decimal <<get>> <<set>>
+    + Price : decimal <<get>> <<set>>
+    + Side : int <<get>> <<set>>
+    + Status : string <<get>> <<set>>
+}
+@enduml

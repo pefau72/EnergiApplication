@@ -1,0 +1,9 @@
+@startuml
+class PortfolioArea {
+    + Code : string <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + EicCode : string <<get>> <<set>>
+    + CurveMinVolumeLimit : decimal <<get>> <<set>>
+    + CurveMaxVolumeLimit : decimal <<get>> <<set>>
+}
+@enduml

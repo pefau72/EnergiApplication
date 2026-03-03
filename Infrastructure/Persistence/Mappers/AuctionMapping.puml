@@ -1,0 +1,6 @@
+@startuml
+class AuctionMapping <<static>> {
+    + {static} ToDomain(entity:AuctionEntity) : Auction
+    + {static} ToEntity(domain:Auction) : AuctionEntity
+}
+@enduml

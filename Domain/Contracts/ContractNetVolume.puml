@@ -1,0 +1,8 @@
+@startuml
+class ContractNetVolume {
+    + NetVolume : decimal? <<get>> <<set>>
+    + ContractId : string <<get>> <<set>>
+    + DeliveryStart : DateTime <<get>> <<set>>
+    + DeliveryEnd : DateTime <<get>> <<set>>
+}
+@enduml

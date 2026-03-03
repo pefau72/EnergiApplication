@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "0k6Bek1EOow=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\peter\\OneDrive\\Dokumenter\\OD_obj\\EnergiApp\\Application\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\peter\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.3\\microsoft.extensions.dependencyinjection.abstractions.10.0.3.nupkg.sha512",
+    "C:\\Users\\peter\\.nuget\\packages\\microsoft.extensions.options\\10.0.3\\microsoft.extensions.options.10.0.3.nupkg.sha512",
+    "C:\\Users\\peter\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.3\\microsoft.extensions.primitives.10.0.3.nupkg.sha512",
+    "C:\\Users\\peter\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512",
+    "C:\\Users\\peter\\.nuget\\packages\\refit\\10.0.1\\refit.10.0.1.nupkg.sha512",
+    "C:\\Users\\peter\\.nuget\\packages\\refit.newtonsoft.json\\10.0.1\\refit.newtonsoft.json.10.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

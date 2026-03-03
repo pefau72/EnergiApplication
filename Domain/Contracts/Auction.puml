@@ -1,0 +1,13 @@
+@startuml
+class Auction {
+    + Id : string <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + State : AuctionStateType <<get>> <<set>>
+    + CloseForBidding : DateTime <<get>> <<set>>
+    + DeliveryStart : DateTime <<get>> <<set>>
+    + DeliveryEnd : DateTime <<get>> <<set>>
+    + Contracts : List<Contract> <<get>> <<set>>
+    + Currencies : List<Currency> <<get>> <<set>>
+    + Portfolios : List<Portfolio> <<get>> <<set>>
+}
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+class CurvePoint {
+    + Price : double <<get>> <<set>>
+    + Volume : double <<get>> <<set>>
+}
+@enduml

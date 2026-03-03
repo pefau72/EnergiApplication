@@ -1,0 +1,7 @@
+@startuml
+class Currency {
+    + CurrencyCode : string <<get>> <<set>>
+    + MinPrice : decimal <<get>> <<set>>
+    + MaxPrice : decimal <<get>> <<set>>
+}
+@enduml
