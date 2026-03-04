@@ -3,18 +3,18 @@ using EnergiApp.Infrastructure.Persistence.Entities; // This namespace contains 
 using Npgsql.EntityFrameworkCore.PostgreSQL;
 
 namespace EnergiApp.Infrastructure.Persistence.db;
-    public class AppDbContext : DbContext
+    public class AppDbContext : DbContext  
     {
         public AppDbContext(DbContextOptions<AppDbContext> options)
             : base(options) { }
 
-        public DbSet<AuctionEntity> Auctions => Set<AuctionEntity>();
-        public DbSet<TradeEntity> Trades => Set<TradeEntity>();
+        public DbSet<AuctionEntity> Auctions => Set<AuctionEntity>();  
+        public DbSet<TradeEntity> Trades => Set<TradeEntity>();   
         public DbSet<CurveOrderEntity> CurveOrders => Set<CurveOrderEntity>();
         public DbSet<CurveOrderPointEntity> CurveOrderPoints => Set<CurveOrderPointEntity>();
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
+        protected override void OnModelCreating(ModelBuilder modelBuilder) // Bliver kaldt af EF Core, når modellen oprettes. Her kan du konfigurere, hvordan dine entiteter skal mappes til database-tabellerne.
+    {
             modelBuilder.Entity<AuctionEntity>(entity =>
             {
                 entity.ToTable("auctions");

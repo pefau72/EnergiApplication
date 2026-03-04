@@ -4,6 +4,7 @@
 using Microsoft.EntityFrameworkCore;
 using EnergiApp.Domain.Repositories;
 using EnergiApp.Infrastructure.Persistence.db;
+using EnergiApp.Infrastructure.Persistence.Repositories;
 
 using EnergiApp.Application.Utils;
 

@@ -1,0 +1,9 @@
+# Ignore build output
+/dist/
+
+# Ignore environment files
+.env
+
+# Ignore OS-specific files
+.DS_Store
+.vs

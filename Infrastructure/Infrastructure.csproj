@@ -22,12 +22,12 @@
 	  <Compile Remove="Persistence\db\AuctionStorageService.cs" />
 	  <Compile Remove="Persistence\db\CurveOrderStorageService.cs" />
 	  <Compile Remove="Persistence\db\TradeStorageService.cs" />
-	  <Compile Remove="Persistence\Repositories\AuctionRepository.cs" />
 	</ItemGroup>
 
   <ItemGroup>
     <Folder Include="ExternalServices\" />
     <Folder Include="Logging\" />
+    <Folder Include="Persistence\Repositories\" />
   </ItemGroup>
 
   <ItemGroup>
