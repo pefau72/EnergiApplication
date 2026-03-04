@@ -1,4 +1,5 @@
 ﻿
+using Application.SSO;
 using EnergiApp.Application;
 using EnergiApp.Application.Exceptions; // This namespace contains custom exceptions related to the Auction API.
 using EnergiApp.Application.Utils;
@@ -11,7 +12,7 @@ using System.Globalization;
 
 public class Runner
 {
-    private readonly NordPoolApiOptions _apiOptions; // Configuration populated from appsettings.json
+    private readonly NordPoolApiOptions _apiOptions; // Configuration to be populated from appsettings.json
     private readonly NordPoolSsoOptions _ssoOptions;
         
     private INordPoolApiClient _apiClient = default!; // client used to make requests to the NordPool API.
@@ -19,10 +20,10 @@ public class Runner
         
     private IEnumerable<Auction> _availableAuctions = default!; // auctions that are fetched for a date range. 
     private Auction _selectedAuction = default!; // This variable holds the currently selected auction. 
-    private readonly IAuctionRepository _auctionRepository;
+    private readonly IAuctionRepository _auctionRepository; // Auction repository for data access operations related to auctions.
 
     public Runner(
-        IOptions<NordPoolApiOptions> apiOptions,
+        IOptions<NordPoolApiOptions> apiOptions, // IOptions<T> bliver injiceret af .NET DI-containeren
         IOptions<NordPoolSsoOptions> ssoOptions,
         IAuctionRepository auctionRepository) // Constructor takes in the Auction API and the SSO service. 
     {
@@ -59,7 +60,10 @@ public class Runner
     private void InitializeClients()
     { 
         _ssoClient = RestService.For<INordPoolSsoClient>(new HttpClient { BaseAddress = new Uri(_ssoOptions.BaseUrl) });
-        _apiClient = RestService.For<INordPoolApiClient>(new HttpClient(new AuthenticatedHttpClientHandler(_ssoClient)) { BaseAddress = new Uri(_apiOptions.BaseUrl) });
+
+        var tokenProvider = new NordPoolTokenProvider(_ssoClient, Options.Create(_ssoOptions));
+
+        _apiClient = RestService.For<INordPoolApiClient>(new HttpClient(new AuthenticatedHttpClientHandler(tokenProvider)) { BaseAddress = new Uri(_apiOptions.BaseUrl) });
     }
 
     private void HandleAuctionsCommand()
@@ -93,15 +97,12 @@ public class Runner
 
         try
         {
-            var response = await _apiClient.PlaceCurveOrder(curveOrderRequest);
+            var response = await _apiClient.PostCurveOrderAsync(curveOrderRequest);
             Console.WriteLine("Curve order placed successfully:");
             ConsoleHelper.WriteCurveOrder(response);
         }
+        
         catch (NordPoolApiException ex)
-        {
-            WriteException(ex);
-        }
-        catch (ApiException ex)
         {
             WriteException(ex);
         }
@@ -113,16 +114,12 @@ public class Runner
         ConsoleHelper.WriteTradesInfo(trades);
     }        
         
-    private static void WriteException(NordpoolApiException ex)
+    private static void WriteException(NordPoolApiException ex)
     {
         Console.WriteLine($"Request failed: HTTP STATUS: {ex.HttpStatusCode}");
         Console.WriteLine(ex.Message);
         
     }
-    private static void WriteException(ApiException ex)
-    {
-        Console.WriteLine($"Request failed: HTTP STATUS: {ex.StatusCode}");
-        Console.WriteLine(ex.Message);
-    }
+    
 }    
 

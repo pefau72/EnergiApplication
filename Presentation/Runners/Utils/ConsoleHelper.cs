@@ -4,6 +4,7 @@
     using System.Collections.Generic;
     using System.Linq;
     using EnergiApp.Domain;
+    
 
     public static class ConsoleHelper
     {
@@ -13,14 +14,14 @@
         {
             Console.WriteLine("Open auctions:");
 
-            foreach (var auction in auctions.Where(x => x.State == AuctionStateType.Open))
+            foreach (var auction in auctions.Where(x => x.State == Auction.AuctionStateType.Open))
                 Console.WriteLine(auction.Id);
 
             Console.WriteLine();
 
             Console.WriteLine("Closed auctions:");
 
-            foreach (var auction in auctions.Where(x => x.State == AuctionStateType.Closed))
+            foreach (var auction in auctions.Where(x => x.State == Auction.AuctionStateType.Closed))
                 Console.WriteLine(auction.Id);
 
             Console.WriteLine();
@@ -28,7 +29,7 @@
 
             Console.WriteLine("ResultsPublished auctions:");
 
-            foreach (var auction in auctions.Where(x => x.State == AuctionStateType.ResultsPublished))
+            foreach (var auction in auctions.Where(x => x.State == Auction.AuctionStateType.Resultspublished))
                 Console.WriteLine(auction.Id);
         }
 
@@ -133,7 +134,7 @@
 
         public static CommandType RequestSelectedAuctionCommand(Auction auction)
         {
-            if (auction.State == AuctionStateType.Open)
+            if (auction.State == Auction.AuctionStateType.Open)
             {
                 Console.WriteLine(
                     "Available options: \"Orders\", \"PlaceCurve\", \"GetAllCurveOrderVersions\",  \"Auctions\", \"AuctionContracts\",   \"Exit\". Specify one of the options:");
@@ -144,7 +145,7 @@
                 return command;
             }
 
-            if (auction.State == AuctionStateType.ResultsPublished)
+            if (auction.State == Auction.AuctionStateType.Resultspublished)
             {
                 Console.WriteLine(
                     "Available options: \"Orders\", \"Trades\", \"Prices\", \"PortfolioVolumes\", \"Auctions\", \"AuctionContracts\",  \"Exit\". Specify one of the options:");
@@ -155,7 +156,7 @@
                 return command;
             }
 
-            if (auction.State == AuctionStateType.Closed)
+            if (auction.State == Auction.AuctionStateType.Closed)
             {
                 Console.WriteLine("Available options: \"Orders\", \"Auctions\", \"AuctionContracts\",  \"Exit\". Specify one of the options:");
                 CommandType command;

@@ -1,4 +1,6 @@
-﻿namespace EnergiApp.Infrastructure.Persistence.Entities;
+﻿using EnergiApp.Domain;
+
+namespace EnergiApp.Infrastructure.Persistence.Entities;
 
 public class TradeEntity
 {
@@ -10,7 +12,7 @@ public class TradeEntity
     public decimal Volume { get; set; }
     public decimal Price { get; set; }
     public int Side { get; set; }
-    public string Status { get; set; }
+    public AuctionResultState Status { get; set; }
 }
 
 

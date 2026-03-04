@@ -11,7 +11,7 @@ namespace EnergiApp.Infrastructure.Persistence.Mappers
             {
                 Id = entity.Id.ToString(),
                 Name = entity.Name,
-                State = (AuctionStateType)entity.State,
+                State = (Auction.AuctionStateType)entity.State,
                 CloseForBidding = entity.CloseForBidding,
                 DeliveryStart = entity.DeliveryStart,
                 DeliveryEnd = entity.DeliveryEnd,
@@ -28,7 +28,7 @@ namespace EnergiApp.Infrastructure.Persistence.Mappers
             {
                 Id = Guid.Parse(domain.Id),
                 Name = domain.Name,
-                State = (int)domain.State,
+                State = (AuctionStateType)domain.State,
                 CloseForBidding = domain.CloseForBidding,
                 DeliveryStart = domain.DeliveryStart,
                 DeliveryEnd = domain.DeliveryEnd,

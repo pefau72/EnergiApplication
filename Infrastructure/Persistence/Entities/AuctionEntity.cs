@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using EnergiApp.Domain;
 
 namespace EnergiApp.Infrastructure.Persistence.Entities
 {
@@ -8,7 +9,7 @@ namespace EnergiApp.Infrastructure.Persistence.Entities
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public int State { get; set; }
+        public AuctionStateType State { get; set; }
         public DateTime CloseForBidding { get; set; }
         public DateTime DeliveryStart { get; set; }
         public DateTime DeliveryEnd { get; set; }

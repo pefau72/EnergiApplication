@@ -1,0 +1,76 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Domain/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.4",
+          "Refit.Newtonsoft.Json": "10.0.1"
+        },
+        "runtime": {
+          "Domain.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.4": {
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.4.30916"
+          }
+        }
+      },
+      "Refit/10.0.1": {
+        "runtime": {
+          "lib/net10.0/Refit.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.1.341"
+          }
+        }
+      },
+      "Refit.Newtonsoft.Json/10.0.1": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.4",
+          "Refit": "10.0.1"
+        },
+        "runtime": {
+          "lib/net10.0/Refit.Newtonsoft.Json.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.1.341"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Newtonsoft.Json/13.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pdgNNMai3zv51W5aq268sujXUyx7SNdE2bj1wZcWjAQrKMFZV260lbqYop1d2GM67JI1huLRwxo9ZqnfF/lC6A==",
+      "path": "newtonsoft.json/13.0.4",
+      "hashPath": "newtonsoft.json.13.0.4.nupkg.sha512"
+    },
+    "Refit/10.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AprsDMXFRU2k+sXZYfiFLYueP7ovEvoGzC2ylAV9i6xh6rcGJOgLiZdugxnEpIrH6WNbiR8OnOrAr06/pZMQaQ==",
+      "path": "refit/10.0.1",
+      "hashPath": "refit.10.0.1.nupkg.sha512"
+    },
+    "Refit.Newtonsoft.Json/10.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-r5J+fvxcDcJTv7kYTxy+uu58YyP7+i+lYoUcrT/PJvEiaZgsgWkpybmialD0ILcBKvZJK/0bNa9gRu+rYxc5iw==",
+      "path": "refit.newtonsoft.json/10.0.1",
+      "hashPath": "refit.newtonsoft.json.10.0.1.nupkg.sha512"
+    }
+  }
+}
