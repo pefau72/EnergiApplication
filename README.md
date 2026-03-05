@@ -1,0 +1,1 @@
+This is a Clean Architecture shell for connecting to NordPool API. It is based on NordPool's drafts, but updated to .NET 10 and with a EF Core DB layer against PostgreSQL. Builds, but not tested yet against db and api.
