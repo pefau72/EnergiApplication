@@ -12,8 +12,8 @@ using EnergiApp.Application.Utils;
 var builder = Host.CreateApplicationBuilder(args);
 
 //Bind the "NordpoolApi" section of the configuration to the NordpoolApiOptions class.
-builder.Services.Configure<NordPoolApiOptions>(builder.Configuration.GetSection("Nordpool:Sso"));
-builder.Services.Configure<NordPoolSsoOptions>(builder.Configuration.GetSection("Sso"));
+builder.Services.Configure<NordPoolApiOptions>(builder.Configuration.GetSection("NordPoolApi")); // Henter sektion fra appsettings.json og binder den til NordPoolApiOptions klassen, så vi kan bruge den i vores applikation.
+builder.Services.Configure<NordPoolSsoOptions>(builder.Configuration.GetSection("NordPoolSso"));
 builder.Services.AddDbContext<AppDbContext>(options =>  options.UseNpgsql(builder.Configuration.GetConnectionString("Postgres")));
 
 // Repositories

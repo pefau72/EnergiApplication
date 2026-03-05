@@ -129,3 +129,4 @@ C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net10
 C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net10.0\Presentation.pdb
 C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net10.0\Presentation.genruntimeconfig.cache
 C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net10.0\ref\Presentation.dll
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\bin\Debug\net10.0\appsettings.json
