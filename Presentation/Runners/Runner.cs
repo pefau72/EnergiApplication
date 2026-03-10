@@ -9,12 +9,15 @@ using EnergiApp.Presentation.Utils; // Utility classes and methods for the conso
 using Microsoft.Extensions.Options; // used for accessing the configuration options 
 using Refit; // Refit is a REST library for .NET that allows you to define API clients using interfaces
 using System.Globalization;
+using EnergiApp.Domain.BusinessActions;
+
 
 public class Runner
 {
     private readonly NordPoolApiOptions _apiOptions; // Configuration to be populated from appsettings.json
-    private readonly NordPoolSsoOptions _ssoOptions;
-        
+    private readonly NordPoolSsoOptions _ssoOptions; // Configuration to be populated from appsettings.json
+    private readonly IRefitClientFactory _refitFactory; // Factory for creating Refit REST API clients, which will be used to create instances of the API and SSO clients.
+
     private INordPoolApiClient _apiClient = default!; // client used to make requests to the NordPool API.
     private INordPoolSsoClient _ssoClient = default!;                                                  // 
         
@@ -25,11 +28,16 @@ public class Runner
     public Runner(
         IOptions<NordPoolApiOptions> apiOptions, // IOptions<T> bliver injiceret af .NET DI-containeren
         IOptions<NordPoolSsoOptions> ssoOptions,
-        IAuctionRepository auctionRepository) // Constructor takes in the Auction API and the SSO service. 
+        IAuctionRepository auctionRepository,
+        IRefitClientFactory refitFactory
+        ) // Constructor takes in the necessary dependencies through dependency injection.
+          // The configuration options for the API and SSO clients are injected using IOptions<T>,
+          // and the auction repository and Refit client factory are also injected for use in the application logic.
     {
         _apiOptions = apiOptions.Value;
         _ssoOptions = ssoOptions.Value;
         _auctionRepository = auctionRepository;
+        _refitFactory = refitFactory;
 
     }
     public async Task RunAsync() // This is the main method that runs the application logic. 
@@ -57,15 +65,38 @@ public class Runner
         Console.WriteLine("Press any key to exit..."); Console.ReadLine();
     }
 
-    private void InitializeClients()
-    { 
-        _ssoClient = RestService.For<INordPoolSsoClient>(new HttpClient { BaseAddress = new Uri(_ssoOptions.BaseUrl) });
-
-        var tokenProvider = new NordPoolTokenProvider(_ssoClient, Options.Create(_ssoOptions));
-
-        _apiClient = RestService.For<INordPoolApiClient>(new HttpClient(new AuthenticatedHttpClientHandler(tokenProvider)) { BaseAddress = new Uri(_apiOptions.BaseUrl) });
+    public interface IRefitClientFactory
+    {
+        T CreateClient<T>(HttpClient httpClient);
     }
 
+    public class RefitClientFactory : IRefitClientFactory
+    {
+        public T CreateClient<T>(HttpClient httpClient)
+            => RestService.For<T>(httpClient);
+    }
+
+    public void InitializeClients() // Internal giver åbenhed i samme assembly.
+    {
+        // Creating an instance of the SSO client using Refit, which will be used to authenticate and obtain tokens for API requests. Data provided from the configuration options.
+        _ssoClient = _refitFactory.CreateClient<INordPoolSsoClient>(
+            new HttpClient { BaseAddress = new Uri(_ssoOptions.BaseUrl) });
+
+        // Creating an instance of the token provider, which will handle the retrieval and caching of access tokens for authenticating API requests.
+        // It takes the SSO client and its configuration options as parameters. 
+        var tokenProvider = new NordPoolTokenProvider(_ssoClient, Options.Create(_ssoOptions));
+
+        // Creating an instance of the API client using Refit, which will be used to make requests to the NordPool API.
+        // The HttpClient is configured with an AuthenticatedHttpClientHandler that uses the token provider to ensure that all requests are authenticated.
+        // The base URL for the API is provided from the configuration options.
+        _apiClient = _refitFactory.CreateClient<INordPoolApiClient>(
+            new HttpClient(new AuthenticatedHttpClientHandler(tokenProvider))
+            {
+                BaseAddress = new Uri(_apiOptions.BaseUrl)
+            });
+    }
+
+    
     private void HandleAuctionsCommand()
     {
         ConsoleHelper.WriteAuctionsInfo(_availableAuctions);

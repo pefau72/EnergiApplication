@@ -1,12 +1,5 @@
-C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net10.0\Presentation.csproj.AssemblyReference.cache
-C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net10.0\rpswa.dswa.cache.json
-C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net10.0\Presentation.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net10.0\Presentation.AssemblyInfoInputs.cache
-C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net10.0\Presentation.AssemblyInfo.cs
-C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net10.0\Presentation.csproj.CoreCompileInputs.cache
-C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net10.0\Presentation.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net10.0\Presentation.sourcelink.json
 C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\bin\Debug\net10.0\packages.config
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\bin\Debug\net10.0\appsettings.json
 C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\bin\Debug\net10.0\Runners\appsettings.json
 C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\bin\Debug\net10.0\Presentation.staticwebassets.endpoints.json
 C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\bin\Debug\net10.0\Presentation.exe
@@ -113,6 +106,14 @@ C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\bin\Debug\net10
 C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\bin\Debug\net10.0\Application.pdb
 C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\bin\Debug\net10.0\Infrastructure.pdb
 C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\bin\Debug\net10.0\Domain.pdb
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net10.0\Presentation.csproj.AssemblyReference.cache
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net10.0\Presentation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net10.0\Presentation.AssemblyInfoInputs.cache
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net10.0\Presentation.AssemblyInfo.cs
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net10.0\Presentation.csproj.CoreCompileInputs.cache
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net10.0\Presentation.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net10.0\Presentation.sourcelink.json
 C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
@@ -129,4 +130,3 @@ C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net10
 C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net10.0\Presentation.pdb
 C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net10.0\Presentation.genruntimeconfig.cache
 C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net10.0\ref\Presentation.dll
-C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\bin\Debug\net10.0\appsettings.json

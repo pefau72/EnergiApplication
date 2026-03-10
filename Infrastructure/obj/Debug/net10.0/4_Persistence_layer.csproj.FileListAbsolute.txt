@@ -1,7 +1,0 @@
-C:\Users\peter\OneDrive\Dokumenter\OD_obj\MinApp\Persistence_layer\obj\Debug\net10.0\4_Persistence_layer.csproj.AssemblyReference.cache
-C:\Users\peter\OneDrive\Dokumenter\OD_obj\MinApp\Persistence_layer\obj\Debug\net10.0\rpswa.dswa.cache.json
-C:\Users\peter\OneDrive\Dokumenter\OD_obj\MinApp\Persistence_layer\obj\Debug\net10.0\4_Persistence_layer.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\peter\OneDrive\Dokumenter\OD_obj\MinApp\Persistence_layer\obj\Debug\net10.0\4_Persistence_layer.AssemblyInfoInputs.cache
-C:\Users\peter\OneDrive\Dokumenter\OD_obj\MinApp\Persistence_layer\obj\Debug\net10.0\4_Persistence_layer.AssemblyInfo.cs
-C:\Users\peter\OneDrive\Dokumenter\OD_obj\MinApp\Persistence_layer\obj\Debug\net10.0\4_Persistence_layer.csproj.CoreCompileInputs.cache
-C:\Users\peter\OneDrive\Dokumenter\OD_obj\MinApp\Persistence_layer\obj\Debug\net10.0\4_Persistence_layer.MvcApplicationPartsAssemblyInfo.cache

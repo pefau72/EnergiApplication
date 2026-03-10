@@ -1,0 +1,7 @@
+@startuml
+class OrderGenerator <<static>> {
+    + {static} GenerateStaticCurveOrderRequest(portfolio:string, areaCode:string, auction:Auction, minPrice:double, maxPrice:double) : CurveOrderRequest
+    + {static} GenerateCurves(auction:Auction, minPrice:double, maxPrice:double) : IEnumerable<Curve>
+    - {static} GenerateCurvePoints(minPrice:double, maxPrice:double) : IEnumerable<CurvePoint>
+}
+@enduml

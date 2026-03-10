@@ -1,7 +1,0 @@
-C:\Users\peter\OneDrive\Dokumenter\OD_obj\MinApp\Domain_layer\obj\Debug\net10.0\3_Domain_layer.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\peter\OneDrive\Dokumenter\OD_obj\MinApp\Domain_layer\obj\Debug\net10.0\3_Domain_layer.AssemblyInfoInputs.cache
-C:\Users\peter\OneDrive\Dokumenter\OD_obj\MinApp\Domain_layer\obj\Debug\net10.0\3_Domain_layer.AssemblyInfo.cs
-C:\Users\peter\OneDrive\Dokumenter\OD_obj\MinApp\Domain_layer\obj\Debug\net10.0\3_Domain_layer.csproj.CoreCompileInputs.cache
-C:\Users\peter\OneDrive\Dokumenter\OD_obj\MinApp\Domain_layer\obj\Debug\net10.0\rpswa.dswa.cache.json
-C:\Users\peter\OneDrive\Dokumenter\OD_obj\MinApp\Domain_layer\obj\Debug\net10.0\3_Domain_layer.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\peter\OneDrive\Dokumenter\OD_obj\MinApp\Domain_layer\obj\Debug\net10.0\3_Domain_layer.csproj.AssemblyReference.cache

@@ -1,0 +1,4 @@
+<#@ include  file="$(LinqToDBT4PostgreSQLTemplatesPath)LinqToDB.PostgreSQL.ttinclude" once="true" #>
+<#+
+#warning "LinqToDB.PostgreSQL.Tools.ttinclude is obsolete. Use LinqToDB.PostgreSQL.ttinclude instead."
+#>

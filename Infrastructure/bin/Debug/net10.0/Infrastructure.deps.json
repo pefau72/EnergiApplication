@@ -205,7 +205,9 @@
       },
       "Domain/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "10.0.3",
           "Newtonsoft.Json": "13.0.4",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.0",
           "Refit.Newtonsoft.Json": "10.0.1"
         },
         "runtime": {

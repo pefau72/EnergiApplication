@@ -1,0 +1,13 @@
+@startuml
+!include .\\Runners\Program.puml
+!include .\\Runners\Runner.puml
+!include .\\Runners\Utils\ConsoleHelper.puml
+!include .\\Runners\Utils\OrderGenerator.puml
+!include .\\obj\Debug\net10.0\.NETCoreApp,Version=v10.0.AssemblyAttributes.puml
+!include .\\obj\Debug\net10.0\1_Presentation_layer.AssemblyInfo.puml
+!include .\\obj\Debug\net10.0\1_Presentation_layer.GlobalUsings.g.puml
+!include .\\obj\Debug\net10.0\Presentation.AssemblyInfo.puml
+!include .\\obj\Debug\net10.0\Presentation.GlobalUsings.g.puml
+!include .\\obj\Debug\net10.0\Presentation_layer.AssemblyInfo.puml
+!include .\\obj\Debug\net10.0\Presentation_layer.GlobalUsings.g.puml
+@enduml

@@ -1,0 +1,19 @@
+@startuml
+class Runner {
+    - <<readonly>> _apiOptions : NordPoolApiOptions
+    - <<readonly>> _ssoOptions : NordPoolSsoOptions
+    - _apiClient : INordPoolApiClient
+    - _ssoClient : ISsoApiClient
+    - _availableAuctions : IEnumerable<Auction>
+    - _selectedAuction : Auction
+    - <<readonly>> _auctionRepository : IAuctionRepository
+    + Runner(apiOptions:IOptions<NordPoolApiOptions>, ssoOptions:IOptions<NordPoolSsoOptions>, auctionRepository:IAuctionRepository)
+    + <<async>> RunAsync() : Task
+    - InitializeClients() : void
+    - HandleAuctionsCommand() : void
+    - <<async>> HandlePlaceCurveCommand() : Task
+    - <<async>> HandleTradesCommand() : Task
+    - {static} WriteException(ex:NordpoolApiException) : void
+    - {static} WriteException(ex:ApiException) : void
+}
+@enduml

@@ -1,0 +1,396 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+ <html xmlns:msxsl="urn:schemas-microsoft-com:xslt"><head><meta content="en-us" http-equiv="Content-Language" /><meta content="text/html; charset=utf-16" http-equiv="Content-Type" /><title _locID="ConversionReport0">
+          Migration Report
+        </title><style> 
+                    /* Body style, for the entire document */
+                    body
+                    {
+                        background: #F3F3F4;
+                        color: #1E1E1F;
+                        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    /* Header1 style, used for the main title */
+                    h1
+                    {
+                        padding: 10px 0px 10px 10px;
+                        font-size: 21pt;
+                        background-color: #E2E2E2;
+                        border-bottom: 1px #C1C1C2 solid; 
+                        color: #201F20;
+                        margin: 0;
+                        font-weight: normal;
+                    }
+
+                    /* Header2 style, used for "Overview" and other sections */
+                    h2
+                    {
+                        font-size: 18pt;
+                        font-weight: normal;
+                        padding: 15px 0 5px 0;
+                        margin: 0;
+                    }
+
+                    /* Header3 style, used for sub-sections, such as project name */
+                    h3
+                    {
+                        font-weight: normal;
+                        font-size: 15pt;
+                        margin: 0;
+                        padding: 15px 0 5px 0;
+                        background-color: transparent;
+                    }
+
+                    /* Color all hyperlinks one color */
+                    a
+                    {
+                        color: #1382CE;
+                    }
+
+                    /* Table styles */ 
+                    table
+                    {
+                        border-spacing: 0 0;
+                        border-collapse: collapse;
+                        font-size: 10pt;
+                    }
+
+                    table th
+                    {
+                        background: #E7E7E8;
+                        text-align: left;
+                        text-decoration: none;
+                        font-weight: normal;
+                        padding: 3px 6px 3px 6px;
+                    }
+
+                    table td
+                    {
+                        vertical-align: top;
+                        padding: 3px 6px 5px 5px;
+                        margin: 0px;
+                        border: 1px solid #E7E7E8;
+                        background: #F7F7F8;
+                    }
+
+                    /* Local link is a style for hyperlinks that link to file:/// content, there are lots so color them as 'normal' text until the user mouse overs */
+                    .localLink
+                    {
+                        color: #1E1E1F;
+                        background: #EEEEED;
+                        text-decoration: none;
+                    }
+
+                    .localLink:hover
+                    {
+                        color: #1382CE;
+                        background: #FFFF99;
+                        text-decoration: none;
+                    }
+
+                    /* Center text, used in the over views cells that contain message level counts */ 
+                    .textCentered
+                    {
+                        text-align: center;
+                    }
+
+                    /* The message cells in message tables should take up all avaliable space */
+                    .messageCell
+                    {
+                        width: 100%;
+                    }
+
+                    /* Padding around the content after the h1 */ 
+                    #content 
+                    {
+	                    padding: 0px 12px 12px 12px; 
+                    }
+
+                    /* The overview table expands to width, with a max width of 97% */ 
+                    #overview table
+                    {
+                        width: auto;
+                        max-width: 75%; 
+                    }
+
+                    /* The messages tables are always 97% width */
+                    #messages table
+                    {
+                        width: 97%;
+                    }
+
+                    /* All Icons */
+                    .IconSuccessEncoded, .IconInfoEncoded, .IconWarningEncoded, .IconErrorEncoded
+                    {
+                        min-width:18px;
+                        min-height:18px; 
+                        background-repeat:no-repeat;
+                        background-position:center;
+                    }
+
+                    /* Success icon encoded */
+                    .IconSuccessEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconSuccess#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABcElEQVR4Xq2TsUsCURzHv15g8ZJcBWlyiYYgCIWcb9DFRRwMW5TA2c0/QEFwFkxxUQdxVlBwCYWOi6IhWgQhBLHJUCkhLr/BW8S7gvrAg+N+v8/v+x68Z8MGy+XSCyABQAXgBgHGALoASkIIDWSLeLBetdHryMjd5IxQPWT4rn1c/P7+xxp72Cs9m5SZ0Bq2vPnbPFafK2zDvmNHypdC0BPkLlQhxJsCAhQoZwdZU5mwxh720qGo8MzTxTTKZDPCx2HoVzp6lz0Q9tKhyx0kGs8Ny+TkWRKk8lCROwEduhyg9l/6lunOPSfmH3NUH6uQ0KHLAe7JYvJjevm+DAMGJHToKtigE+vwvIidxLamb8IBY9e+C5LiXREkfho3TSd06HJA13/oh6T51MTsfQbHrsMynQ5dDihFjiK8JJAU9AKIWTp76dCVN7HWHrajmUEGvyF9nkbAE6gLIS7kTUyuf2gscLoJrElZo/Mvj+nPz/kLTmfnEwP3tB0AAAAASUVORK5CYII=);
+                    }
+
+                    /* Information icon encoded */
+                    .IconInfoEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconInformation#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHElEQVR4Xs2TsUoDQRRF7wwoziokjZUKadInhdhukR9YP8DMX1hYW+QvdsXa/QHBbcXC7W0CamWTQnclFutceIQJwwaWNLlwm5k5d94M76mmaeCrrmsLYOocY12FcxZFUeozCqKqqgYA8uevv1H6VuPxcwlfk5N92KHBxfFeCSAxxswlYAW/Xr989x/mv9gkhtyMDhcAxgzRsp7flj8B/HF1RsMXq+NZMkopaHe7lbKxQUEIGbKsYNoGn969060hZBkQex/W8oRQwsQaW2o3Ago2SVcJUzAgY3N0lTCZZm+zPS8HB51gMmS1DEYyOz9acKO1D8JWTlafKIMxdhvlfdyT94Vv5h7P8Ky7nQzACmhvKq3zk3PjW9asz9D/1oigecsioooAAAAASUVORK5CYII=);
+                    }
+
+                    /* Warning icon encoded */
+                    .IconWarningEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconWarning#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAx0lEQVR4XpWSMQ7CMAxFf4xAyBMLCxMrO8dhaBcuwdCJS3RJBw7SA/QGTCxdWJgiQYWKXJWKIXHIlyw5lqr34tQgEOdcBsCOx5yZK3hCCKdYXneQkh4pEfqzLfu+wVDSyyzFoJjfz9NB+pAF+eizx2Vruts0k15mPgvS6GYvpVtQhB61IB/dk6AF6fS4Ben0uIX5odtFe8Q/eW1KvFeH4e8khT6+gm5B+t3juyDt7n0jpe+CANTd+oTUjN/U3yVaABnSUjFz/gFq44JaVSCXeQAAAABJRU5ErkJggg==);
+                    }
+
+                    /* Error icon encoded */
+                    .IconErrorEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconError#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQElEQVR4XqWTvUoEQRCE6wYPZUA80AfwAQz23uCMjA7MDRQEIzPBVEyNTQUFIw00vcQTTMzuAh/AxEQQT8HF/3G/oGGnEUGuoNnd6qoZuqltyKEsyzVJq5I6rnUp6SjGeGhESikzzlc1eL7opfuVbrqbU1Zw9NCgtQMaZpY0eNnaaL2fHusvTK5vKu7sjSS1Y4y3QUA6K3e3Mau5UFDyMP7tYF9o8cAHZv68vipoIJg971PZIZ5HiwdvYGGvFVFHmGmZ2MxwmQYPXubPl9Up0tfoMQGetXd6mRbvhBw+boZ6WF7Mbv1+GsHRk0fQmPAH1GfmZirbCfDJ61tw3Px8/8pZsPAG4jlVhcPgZ7adwNWBB68lkRQWFiTgFlbnLY3DGGM7izIJIyT/jjIvEJw6fdJTc6krDzh6aMwMP9bvDH4ADSsa9uSWVJkAAAAASUVORK5CYII=);
+                    }
+                 </style><script type="text/javascript" language="javascript"> 
+          
+            // Startup 
+            // Hook up the the loaded event for the document/window, to linkify the document content
+            var startupFunction = function() { linkifyElement("messages"); };
+            
+            if(window.attachEvent)
+            {
+              window.attachEvent('onload', startupFunction);
+            }
+            else if (window.addEventListener) 
+            {
+              window.addEventListener('load', startupFunction, false);
+            }
+            else 
+            {
+              document.addEventListener('load', startupFunction, false);
+            } 
+            
+            // Toggles the visibility of table rows with the specified name 
+            function toggleTableRowsByName(name)
+            {
+               var allRows = document.getElementsByTagName('tr');
+               for (i=0; i < allRows.length; i++)
+               {
+                  var currentName = allRows[i].getAttribute('name');
+                  if(!!currentName && currentName.indexOf(name) == 0)
+                  {
+                      var isVisible = allRows[i].style.display == ''; 
+                      isVisible ? allRows[i].style.display = 'none' : allRows[i].style.display = '';
+                  }
+               }
+            }
+            
+            function scrollToFirstVisibleRow(name) 
+            {
+               var allRows = document.getElementsByTagName('tr');
+               for (i=0; i < allRows.length; i++)
+               {
+                  var currentName = allRows[i].getAttribute('name');
+                  var isVisible = allRows[i].style.display == ''; 
+                  if(!!currentName && currentName.indexOf(name) == 0 && isVisible)
+                  {
+                     allRows[i].scrollIntoView(true); 
+                     return true; 
+                  }
+               }
+               
+               return false;
+            }
+            
+            // Linkifies the specified text content, replaces candidate links with html links 
+            function linkify(text)
+            {
+                 if(!text || 0 === text.length)
+                 {
+                     return text; 
+                 }
+
+                 // Find http, https and ftp links and replace them with hyper links 
+                 var urlLink = /(http|https|ftp)\:\/\/[a-zA-Z0-9\-\.]+(:[a-zA-Z0-9]*)?\/?([a-zA-Z0-9\-\._\?\,\/\\\+&%\$#\=~;\{\}])*/gi;
+                 
+                 return text.replace(urlLink, '<a href="$&">$&</a>') ;
+            }
+            
+            // Linkifies the specified element by ID
+            function linkifyElement(id)
+            {
+                var element = document.getElementById(id);
+                if(!!element)
+                {
+                  element.innerHTML = linkify(element.innerHTML); 
+                }
+            }
+            
+            function ToggleMessageVisibility(projectName)
+            {
+              if(!projectName || 0 === projectName.length)
+              {
+                return; 
+              }
+              
+              toggleTableRowsByName("MessageRowClass" + projectName);
+              toggleTableRowsByName('MessageRowHeaderShow' + projectName);
+              toggleTableRowsByName('MessageRowHeaderHide' + projectName); 
+            }
+            
+            function ScrollToFirstVisibleMessage(projectName)
+            {
+              if(!projectName || 0 === projectName.length)
+              {
+                return; 
+              }
+              
+              // First try the 'Show messages' row
+              if(!scrollToFirstVisibleRow('MessageRowHeaderShow' + projectName))
+              {
+                // Failed to find a visible row for 'Show messages', try an actual message row 
+                scrollToFirstVisibleRow('MessageRowClass' + projectName); 
+              }
+            }
+           </script></head><body><h1 _locID="ConversionReport">
+          Migration Report - Energi_solution</h1><div id="content"><h2 _locID="OverviewTitle">Overview</h2><div id="overview"><table><tr><th></th><th _locID="ProjectTableHeader">Project</th><th _locID="PathTableHeader">Path</th><th _locID="ErrorsTableHeader">Errors</th><th _locID="WarningsTableHeader">Warnings</th><th _locID="MessagesTableHeader">Messages</th></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Presentation">Presentation</a></strong></td><td>Presentation\Presentation.csproj</td><td class="textCentered"><a href="#PresentationError">2</a></td><td class="textCentered"><a href="#PresentationWarning">18</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('Presentation'); return false;">105</a></td></tr></table></div><h2 _locID="SolutionAndProjectsTitle">Solution and projects</h2><div id="messages"><a name="Presentation" /><h3>Presentation</h3><table><tr id="PresentationHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr name="ErrorRowClassPresentation"><td class="IconErrorEncoded"><a name="PresentationError" /></td><td class="messageCell"><strong>Presentation\App.xaml:
+        </strong><span>Failed to backup file as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\App.xaml</span></td></tr><tr name="ErrorRowClassPresentation"><td class="IconErrorEncoded"><a name="PresentationError" /></td><td class="messageCell"><strong>Presentation\Application.xaml:
+        </strong><span>Failed to backup file as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Application.xaml</span></td></tr><tr name="WarningRowClassPresentation"><td class="IconWarningEncoded"><a name="PresentationWarning" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\CopyMe.PostgreSQL.tt.txt:
+        </strong><span>Backed up project may not build.  Project contains linked file: C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\CopyMe.PostgreSQL.tt.txt</span></td></tr><tr name="WarningRowClassPresentation"><td class="IconWarningEncoded"><a name="PresentationWarning" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\DataAnnotations.ttinclude:
+        </strong><span>Backed up project may not build.  Project contains linked file: C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\DataAnnotations.ttinclude</span></td></tr><tr name="WarningRowClassPresentation"><td class="IconWarningEncoded"><a name="PresentationWarning" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\DataModel.ttinclude:
+        </strong><span>Backed up project may not build.  Project contains linked file: C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\DataModel.ttinclude</span></td></tr><tr name="WarningRowClassPresentation"><td class="IconWarningEncoded"><a name="PresentationWarning" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\EditableObject.ttinclude:
+        </strong><span>Backed up project may not build.  Project contains linked file: C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\EditableObject.ttinclude</span></td></tr><tr name="WarningRowClassPresentation"><td class="IconWarningEncoded"><a name="PresentationWarning" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\Equatable.ttinclude:
+        </strong><span>Backed up project may not build.  Project contains linked file: C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\Equatable.ttinclude</span></td></tr><tr name="WarningRowClassPresentation"><td class="IconWarningEncoded"><a name="PresentationWarning" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\Humanizer.ttinclude:
+        </strong><span>Backed up project may not build.  Project contains linked file: C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\Humanizer.ttinclude</span></td></tr><tr name="WarningRowClassPresentation"><td class="IconWarningEncoded"><a name="PresentationWarning" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\LinqToDB.PostgreSQL.Tools.ttinclude:
+        </strong><span>Backed up project may not build.  Project contains linked file: C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\LinqToDB.PostgreSQL.Tools.ttinclude</span></td></tr><tr name="WarningRowClassPresentation"><td class="IconWarningEncoded"><a name="PresentationWarning" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\LinqToDB.PostgreSQL.ttinclude:
+        </strong><span>Backed up project may not build.  Project contains linked file: C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\LinqToDB.PostgreSQL.ttinclude</span></td></tr><tr name="WarningRowClassPresentation"><td class="IconWarningEncoded"><a name="PresentationWarning" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\LinqToDB.Tools.ttinclude:
+        </strong><span>Backed up project may not build.  Project contains linked file: C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\LinqToDB.Tools.ttinclude</span></td></tr><tr name="WarningRowClassPresentation"><td class="IconWarningEncoded"><a name="PresentationWarning" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\LinqToDB.ttinclude:
+        </strong><span>Backed up project may not build.  Project contains linked file: C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\LinqToDB.ttinclude</span></td></tr><tr name="WarningRowClassPresentation"><td class="IconWarningEncoded"><a name="PresentationWarning" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\MultipleFiles.ttinclude:
+        </strong><span>Backed up project may not build.  Project contains linked file: C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\MultipleFiles.ttinclude</span></td></tr><tr name="WarningRowClassPresentation"><td class="IconWarningEncoded"><a name="PresentationWarning" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\NotifyDataErrorInfo.ttinclude:
+        </strong><span>Backed up project may not build.  Project contains linked file: C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\NotifyDataErrorInfo.ttinclude</span></td></tr><tr name="WarningRowClassPresentation"><td class="IconWarningEncoded"><a name="PresentationWarning" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\NotifyPropertyChanged.ttinclude:
+        </strong><span>Backed up project may not build.  Project contains linked file: C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\NotifyPropertyChanged.ttinclude</span></td></tr><tr name="WarningRowClassPresentation"><td class="IconWarningEncoded"><a name="PresentationWarning" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\ObsoleteAttributes.ttinclude:
+        </strong><span>Backed up project may not build.  Project contains linked file: C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\ObsoleteAttributes.ttinclude</span></td></tr><tr name="WarningRowClassPresentation"><td class="IconWarningEncoded"><a name="PresentationWarning" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\PluralizationService.ttinclude:
+        </strong><span>Backed up project may not build.  Project contains linked file: C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\PluralizationService.ttinclude</span></td></tr><tr name="WarningRowClassPresentation"><td class="IconWarningEncoded"><a name="PresentationWarning" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\README.md:
+        </strong><span>Backed up project may not build.  Project contains linked file: C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\README.md</span></td></tr><tr name="WarningRowClassPresentation"><td class="IconWarningEncoded"><a name="PresentationWarning" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\T4Model.ttinclude:
+        </strong><span>Backed up project may not build.  Project contains linked file: C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\T4Model.ttinclude</span></td></tr><tr name="WarningRowClassPresentation"><td class="IconWarningEncoded"><a name="PresentationWarning" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\Validation.ttinclude:
+        </strong><span>Backed up project may not build.  Project contains linked file: C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\Validation.ttinclude</span></td></tr><tr name="MessageRowHeaderShowPresentation"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="PresentationMessage" onclick="ToggleMessageVisibility('Presentation'); return false;">
+          Show 105 additional messages
+        </a></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Presentation.csproj:
+        </strong><span>Project file successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Presentation.csproj</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\appsettings.json:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\appsettings.json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\ClassDiagram1.cd:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\ClassDiagram1.cd</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\include.puml:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\include.puml</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\obj\Presentation.csproj.nuget.dgspec.json:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\obj\Presentation.csproj.nuget.dgspec.json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\obj\Presentation.csproj.nuget.g.props:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\obj\Presentation.csproj.nuget.g.props</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\obj\Presentation.csproj.nuget.g.targets:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\obj\Presentation.csproj.nuget.g.targets</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\obj\project.assets.json:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\obj\project.assets.json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\obj\project.nuget.cache:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\obj\project.nuget.cache</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\packages.config:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\packages.config</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Presentation.csproj:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Presentation(2).csproj</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Presentation.csproj:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Presentation(2).csproj</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Properties\launchSettings.json:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Properties\launchSettings.json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\appsettings.json:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\appsettings.json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\Program.cs:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\Program.cs</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\Program.puml:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\Program.puml</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\Runner.cs:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\Runner.cs</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\Runner.puml:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\Runner.puml</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\Utils\ConsoleHelper.cs:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\Utils\ConsoleHelper.cs</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\Utils\ConsoleHelper.puml:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\Utils\ConsoleHelper.puml</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\Utils\OrderGenerator.cs:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\Utils\OrderGenerator.cs</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\Utils\OrderGenerator.puml:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\Utils\OrderGenerator.puml</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\CopyMe.PostgreSQL.tt.txt:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\CopyMe.PostgreSQL.tt.txt</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\DataAnnotations.ttinclude:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\DataAnnotations.ttinclude</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\DataModel.ttinclude:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\DataModel.ttinclude</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\EditableObject.ttinclude:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\EditableObject.ttinclude</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\Equatable.ttinclude:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\Equatable.ttinclude</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\Humanizer.ttinclude:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\Humanizer.ttinclude</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\LinqToDB.PostgreSQL.Tools.ttinclude:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\LinqToDB.PostgreSQL.Tools.ttinclude</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\LinqToDB.PostgreSQL.ttinclude:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\LinqToDB.PostgreSQL.ttinclude</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\LinqToDB.Tools.ttinclude:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\LinqToDB.Tools.ttinclude</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\LinqToDB.ttinclude:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\LinqToDB.ttinclude</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\MultipleFiles.ttinclude:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\MultipleFiles.ttinclude</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\NotifyDataErrorInfo.ttinclude:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\NotifyDataErrorInfo.ttinclude</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\NotifyPropertyChanged.ttinclude:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\NotifyPropertyChanged.ttinclude</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\ObsoleteAttributes.ttinclude:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\ObsoleteAttributes.ttinclude</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\PluralizationService.ttinclude:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\PluralizationService.ttinclude</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\README.md:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\README.md</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\T4Model.ttinclude:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\T4Model.ttinclude</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>..\..\..\..\.nuget\packages\linq2db.postgresql\6.1.0\contentFiles\any\any\LinqToDB.Templates\Validation.ttinclude:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\LinqToDB.Templates\Validation.ttinclude</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\appsettings.json:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\appsettings(2).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\appsettings.json:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\appsettings(2).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\ClassDiagram1.cd:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\ClassDiagram1(2).cd</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\ClassDiagram1.cd:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\ClassDiagram1(2).cd</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\include.puml:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\include(2).puml</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\include.puml:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\include(2).puml</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\obj\Presentation.csproj.nuget.dgspec.json:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\obj\Presentation.csproj.nuget.dgspec(2).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\obj\Presentation.csproj.nuget.dgspec.json:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\obj\Presentation.csproj.nuget.dgspec(2).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\obj\Presentation.csproj.nuget.g.props:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\obj\Presentation.csproj.nuget.g(2).props</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\obj\Presentation.csproj.nuget.g.props:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\obj\Presentation.csproj.nuget.g(2).props</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\obj\Presentation.csproj.nuget.g.targets:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\obj\Presentation.csproj.nuget.g(2).targets</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\obj\Presentation.csproj.nuget.g.targets:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\obj\Presentation.csproj.nuget.g(2).targets</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\obj\project.assets.json:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\obj\project.assets(2).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\obj\project.assets.json:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\obj\project.assets(2).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\obj\project.nuget.cache:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\obj\project.nuget(2).cache</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\obj\project.nuget.cache:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\obj\project.nuget(2).cache</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\packages.config:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\packages(2).config</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\packages.config:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\packages(2).config</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Presentation.csproj:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Presentation(3).csproj</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Presentation.csproj:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Presentation(3).csproj</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Properties\launchSettings.json:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Properties\launchSettings(2).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Properties\launchSettings.json:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Properties\launchSettings(2).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\appsettings.json:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\appsettings(2).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\appsettings.json:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\appsettings(2).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\Program.cs:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\Program(2).cs</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\Program.cs:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\Program(2).cs</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\Program.puml:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\Program(2).puml</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\Program.puml:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\Program(2).puml</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\Runner.cs:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\Runner(2).cs</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\Runner.cs:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\Runner(2).cs</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\Runner.puml:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\Runner(2).puml</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\Runner.puml:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\Runner(2).puml</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\Utils\ConsoleHelper.cs:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\Utils\ConsoleHelper(2).cs</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\Utils\ConsoleHelper.cs:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\Utils\ConsoleHelper(2).cs</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\Utils\ConsoleHelper.puml:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\Utils\ConsoleHelper(2).puml</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\Utils\ConsoleHelper.puml:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\Utils\ConsoleHelper(2).puml</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\Utils\OrderGenerator.cs:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\Utils\OrderGenerator(2).cs</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\Utils\OrderGenerator.cs:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\Utils\OrderGenerator(2).cs</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\Utils\OrderGenerator.puml:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\Utils\OrderGenerator(2).puml</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\Utils\OrderGenerator.puml:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\Utils\OrderGenerator(2).puml</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\packages.config:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\packages(3).config</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\packages.config:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\packages(3).config</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\appsettings.json:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\appsettings(3).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\appsettings.json:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\appsettings(3).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\obj\Presentation.csproj.nuget.dgspec.json:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\obj\Presentation.csproj.nuget.dgspec(3).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\obj\Presentation.csproj.nuget.dgspec.json:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\obj\Presentation.csproj.nuget.dgspec(3).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\obj\project.assets.json:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\obj\project.assets(3).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\obj\project.assets.json:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\obj\project.assets(3).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Properties\launchSettings.json:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Properties\launchSettings(3).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Properties\launchSettings.json:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Properties\launchSettings(3).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\appsettings.json:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\appsettings(3).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\appsettings.json:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\appsettings(3).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\packages.config:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\packages(4).config</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\packages.config:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\packages(4).config</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\appsettings.json:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\appsettings(4).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\appsettings.json:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\appsettings(4).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\obj\Presentation.csproj.nuget.dgspec.json:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\obj\Presentation.csproj.nuget.dgspec(4).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\obj\Presentation.csproj.nuget.dgspec.json:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\obj\Presentation.csproj.nuget.dgspec(4).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\obj\project.assets.json:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\obj\project.assets(4).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\obj\project.assets.json:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\obj\project.assets(4).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Properties\launchSettings.json:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Properties\launchSettings(4).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Properties\launchSettings.json:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Properties\launchSettings(4).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\appsettings.json:
+        </strong><span>Backup file name conflict.  Renaming file to:  C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\appsettings(4).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Runners\appsettings.json:
+        </strong><span>File successfully backed up as C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Backup\Runners\appsettings(4).json</span></td></tr><tr name="MessageRowClassPresentation" style="display: none"><td class="IconInfoEncoded"><a name="PresentationMessage" /></td><td class="messageCell"><strong>Presentation\Presentation.csproj:
+        </strong><span>Project migrated successfully</span></td></tr><tr style="display: none" name="MessageRowHeaderHidePresentation"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="PresentationMessage" onclick="ToggleMessageVisibility('Presentation'); return false;">
+          Hide 105 additional messages
+        </a></td></tr></table></div></div></body></html>
