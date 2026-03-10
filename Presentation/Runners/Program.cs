@@ -7,6 +7,7 @@ using EnergiApp.Domain.Services;
 using EnergiApp.Infrastructure.Persistence.db;
 using EnergiApp.Infrastructure.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
+using static Runner;
 
 // Create a new application builder for a console application.
 var builder = Host.CreateApplicationBuilder(args); // Initializes a new instance of the HostBuilder class, which is used to configure and build the application host.
@@ -25,6 +26,7 @@ builder.Services.AddScoped<ICurveOrderRepository, CurveOrderRepository>();
 // Register the Runner class as a singleton service in the dependency injection container. 
 builder.Services.AddSingleton<Runner>();
 builder.Services.AddSingleton<ICurveOrderService, CurveOrderService>();
+builder.Services.AddSingleton<IRefitClientFactory, RefitClientFactory>();
 
 // Build the application, and compile configuration into a runnable application instance. 
 var app = builder.Build();

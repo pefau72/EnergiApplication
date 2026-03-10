@@ -13,18 +13,12 @@ using System.Reflection;
 using Xunit;
 using static Runner; // Assuming InitializeClients is an internal method of Runner, we can use reflection to call it in the test.
 
-public class InitializeClientsTests
+public class GetCorrectInjectionTest
 {
-    //Testing:
-    // Reads the correct URLs from options
-    // 2. Creates two HttpClients
-    // 3. Wraps the API HttpClient in an authentication handler
-    // 4. Passes the HttpClients to the Refit factory
-    // 5. Calls the factory exactly once for each client
-    // Produces the correct client configuration
+    
 
     [Fact] // For Xunit: This is a test method
-    public void InitializeClients_CreatesClientsWithCorrectConfiguration()
+    public void GetCorrectConfiguration()
     {
         // Arrange
         var ssoOptions = Options.Create(new NordPoolSsoOptions { BaseUrl = "https://sso.test/" }); //fake options, because not loaded from appsettings in test

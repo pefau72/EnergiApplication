@@ -1,8 +1,6 @@
 ﻿namespace EnergiApp.Domain.BusinessActions
 {
-    using System.Collections.Generic;
-    using System.Linq;
-    using EnergiApp.Domain;
+    
 
     public static class OrderGenerator
     {
@@ -38,7 +36,7 @@
             return curves;
         }
 
-        private static IEnumerable<CurvePoint> GenerateCurvePoints(double minPrice, double maxPrice)
+        internal static IEnumerable<CurvePoint> GenerateCurvePoints(double minPrice, double maxPrice)
         {
             var curvePoints = new List<CurvePoint>();
             var startingVolume = 500;
@@ -65,6 +63,7 @@
             }
 
             return curvePoints;
+            
         }
     }
       
