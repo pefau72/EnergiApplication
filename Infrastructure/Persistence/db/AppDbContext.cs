@@ -3,19 +3,43 @@ using EnergiApp.Infrastructure.Persistence.Entities; // This namespace contains 
 using Npgsql.EntityFrameworkCore.PostgreSQL;
 
 namespace EnergiApp.Infrastructure.Persistence.db;
-    public class AppDbContext : DbContext  
+
+public static class ModelBuilderExtensions
+{
+    public static void IgnoreNamespace(this ModelBuilder modelBuilder, string @namespace)
     {
+        var types = modelBuilder.Model
+            .GetEntityTypes()
+            .Where(t => t.ClrType.Namespace == @namespace)
+            .ToList();
+
+        foreach (var type in types)
+            modelBuilder.Ignore(type.ClrType);
+    }
+}
+
+public class AppDbContext : DbContext  
+    {
+        
         public AppDbContext(DbContextOptions<AppDbContext> options)
             : base(options) { }
 
-        public DbSet<AuctionEntity> Auctions => Set<AuctionEntity>();  
+        public DbSet<AuctionEntity> Auctions => Set<AuctionEntity>();  // 
         public DbSet<TradeEntity> Trades => Set<TradeEntity>();   
         public DbSet<CurveOrderEntity> CurveOrders => Set<CurveOrderEntity>();
         public DbSet<CurveOrderPointEntity> CurveOrderPoints => Set<CurveOrderPointEntity>();
+        public DbSet<PortfolioAreaEntity> PortfolioArea => Set<PortfolioAreaEntity>();   
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder) // Bliver kaldt af EF Core, når modellen oprettes. Her kan du konfigurere, hvordan dine entiteter skal mappes til database-tabellerne.
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder) // Bliver kaldt af EF Core, når modellen oprettes. Her kan du konfigurere, hvordan dine entiteter skal mappes til database-tabellerne.
     {
-            modelBuilder.Entity<AuctionEntity>(entity =>
+        modelBuilder.ApplyConfigurationsFromAssembly(
+            typeof(AppDbContext).Assembly,
+            type => type.Namespace == "EnergiApp.Persistence.Entities"
+            );
+        modelBuilder.IgnoreNamespace("EnergiApp.Domain");
+
+        modelBuilder.Entity<AuctionEntity>(entity =>
             {
                 entity.ToTable("auctions");
                 entity.HasKey(x => x.Id);
@@ -34,12 +58,19 @@ namespace EnergiApp.Infrastructure.Persistence.db;
                 entity.HasKey(x => x.Id);
             });
 
-            modelBuilder.Entity<CurveOrderPointEntity>(entity =>
+            modelBuilder.Entity<PortfolioAreaEntity>(entity =>
+            {
+                entity.ToTable("portfolio_areas");
+                entity.HasKey(x => x.Id);
+            });
+
+        modelBuilder.Entity<CurveOrderPointEntity>(entity =>
             {
                 entity.ToTable("curve_order_points");
                 entity.HasKey(x => x.Id);
 
             });
         }
+
     }
 

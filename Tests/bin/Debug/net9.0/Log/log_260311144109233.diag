@@ -1,0 +1,81 @@
+2026-03-11T14:41:09.2425116+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 1.9.1+cb5afc3bb9bb01ebd75b57f89e8358b914ee2a49
+2026-03-11T14:41:09.2589190+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2026-03-11T14:41:09.2603073+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2026-03-11T14:41:09.2603123+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 14:41:09.210
+2026-03-11T14:41:09.2607690+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 10700
+2026-03-11T14:41:09.2608095+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 9.0.14
+2026-03-11T14:41:09.2608255+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\9.0.14\System.Private.CoreLib.dll
+2026-03-11T14:41:09.2608354+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2026-03-11T14:41:09.2608895+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Tests\bin\Debug\net9.0\Tests.dll
+2026-03-11T14:41:09.2609912+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Tests\bin\Debug\net9.0\Log --results-directory C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\TestResults --client-port 63147'
+2026-03-11T14:41:09.2624988+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2026-03-11T14:41:09.2833415+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2026-03-11T14:41:09.2979074+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable: 
+2026-03-11T14:41:09.5480329+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: '30ea7c6e-dd24-4152-a360-1387158cd41d' Version: '3.2.2' DisplayName: 'xUnit.net v3 Microsoft.Testing.Platform test framework' Description: 'xUnit.net v3 Microsoft.Testing.Platform test framework'
+2026-03-11T14:41:09.5612572+00:00 xUnit.net INFORMATION xUnit.net v3 In-Process Runner v3.2.2+728c1dce01 (64-bit .NET 9.0.14)
+2026-03-11T14:41:09.6116832+00:00 xUnit.net INFORMATION   Discovering: Tests
+2026-03-11T14:41:09.6673181+00:00 xUnit.net INFORMATION   Discovered:  Tests
+2026-03-11T14:41:09.6893628+00:00 xUnit.net INFORMATION   Starting:    Tests
+2026-03-11T14:41:14.1493814+00:00 xUnit.net ERROR     DatabaseConnectionTest.CanConnectToDatabase [FAIL]
+2026-03-11T14:41:14.1499138+00:00 xUnit.net INFORMATION       System.InvalidOperationException : The entity type 'PortfolioArea' requires a primary key to be defined. If you intended to use a keyless entity type, call 'HasNoKey' in 'OnModelCreating'. For more information on keyless entity types, see https://go.microsoft.com/fwlink/?linkid=2141943.
+2026-03-11T14:41:14.1503649+00:00 xUnit.net INFORMATION       Stack Trace:
+2026-03-11T14:41:14.1507425+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.ValidateNonNullPrimaryKeys(IModel model, IDiagnosticsLogger`1 logger)
+2026-03-11T14:41:14.1507601+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+2026-03-11T14:41:14.1507664+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Infrastructure.RelationalModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+2026-03-11T14:41:14.1507730+00:00 xUnit.net INFORMATION            at Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.NpgsqlModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+2026-03-11T14:41:14.1507801+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Infrastructure.ModelRuntimeInitializer.Initialize(IModel model, Boolean designTime, IDiagnosticsLogger`1 validationLogger)
+2026-03-11T14:41:14.1507920+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.CreateModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+2026-03-11T14:41:14.1508095+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+2026-03-11T14:41:14.1508166+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+2026-03-11T14:41:14.1508205+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+2026-03-11T14:41:14.1508265+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__8_4(IServiceProvider p)
+2026-03-11T14:41:14.1508330+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2026-03-11T14:41:14.1508588+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2026-03-11T14:41:14.1508695+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+2026-03-11T14:41:14.1508761+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2026-03-11T14:41:14.1508838+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2026-03-11T14:41:14.1508947+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2026-03-11T14:41:14.1509047+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2026-03-11T14:41:14.1509120+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+2026-03-11T14:41:14.1509185+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2026-03-11T14:41:14.1509301+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2026-03-11T14:41:14.1509407+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2026-03-11T14:41:14.1509535+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2026-03-11T14:41:14.1509638+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+2026-03-11T14:41:14.1509762+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2026-03-11T14:41:14.1509893+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2026-03-11T14:41:14.1510045+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2026-03-11T14:41:14.1510316+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2026-03-11T14:41:14.1510562+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+2026-03-11T14:41:14.1510699+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2026-03-11T14:41:14.1510847+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2026-03-11T14:41:14.1510970+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2026-03-11T14:41:14.1511147+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2026-03-11T14:41:14.1511332+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+2026-03-11T14:41:14.1511403+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2026-03-11T14:41:14.1511480+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+2026-03-11T14:41:14.1511573+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+2026-03-11T14:41:14.1511711+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+2026-03-11T14:41:14.1511833+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+2026-03-11T14:41:14.1511941+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+2026-03-11T14:41:14.1512013+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+2026-03-11T14:41:14.1512194+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+2026-03-11T14:41:14.1512276+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+2026-03-11T14:41:14.1512361+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+2026-03-11T14:41:14.1512470+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+2026-03-11T14:41:14.1512577+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+2026-03-11T14:41:14.1512653+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+2026-03-11T14:41:14.1512693+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+2026-03-11T14:41:14.1512838+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+2026-03-11T14:41:14.1512956+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure<System.IServiceProvider>.get_Instance()
+2026-03-11T14:41:14.1513162+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService(IInfrastructure`1 accessor, Type serviceType)
+2026-03-11T14:41:14.1513256+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Infrastructure.Internal.InfrastructureExtensions.GetService[TService](IInfrastructure`1 accessor)
+2026-03-11T14:41:14.1513335+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Infrastructure.AccessorExtensions.GetService[TService](IInfrastructure`1 accessor)
+2026-03-11T14:41:14.1513407+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.get_Dependencies()
+2026-03-11T14:41:14.1513469+00:00 xUnit.net INFORMATION            at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.CanConnectAsync(CancellationToken cancellationToken)
+2026-03-11T14:41:14.1513732+00:00 xUnit.net INFORMATION         C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Tests\Integration\Infrastructure.dbtest.cs(25,0): at DatabaseConnectionTest.CanConnectToDatabase()
+2026-03-11T14:41:14.1513849+00:00 xUnit.net INFORMATION         C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Tests\Integration\Infrastructure.dbtest.cs(27,0): at DatabaseConnectionTest.CanConnectToDatabase()
+2026-03-11T14:41:14.1585026+00:00 xUnit.net INFORMATION         --- End of stack trace from previous location ---
+2026-03-11T14:41:24.1658178+00:00 xUnit.net INFORMATION   Finished:    Tests (ID = '01b884c3763759537e0f6d2c8a3b0bc3afbdbc757e367a8c0d8ea5db22d2d137')
+2026-03-11T14:41:24.1708346+00:00 xUnit.net INFORMATION === TEST EXECUTION SUMMARY ===
+2026-03-11T14:41:24.1759540+00:00 xUnit.net INFORMATION    Tests  Total: 7, Errors: 0, Failed: 1, Skipped: 0, Not Run: 0, Time: 14,479s

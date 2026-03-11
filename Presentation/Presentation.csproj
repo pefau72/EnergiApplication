@@ -11,7 +11,8 @@
         </UpgradeBackupLocation>
         <OldToolsVersion>2.0</OldToolsVersion>
         <ProjectGuid>{26BB4B99-E4DB-8D6F-9A99-39E9DFD5E68A}</ProjectGuid>
-    </PropertyGroup>
+      <UserSecretsId>e8b728b4-b898-4417-90bd-16a2960b6ec4</UserSecretsId>
+  </PropertyGroup>
 	
   	<PropertyGroup Condition="'$(Configuration)' == 'Debug'">
       <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>

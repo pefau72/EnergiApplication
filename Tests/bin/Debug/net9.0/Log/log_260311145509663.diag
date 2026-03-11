@@ -1,0 +1,29 @@
+2026-03-11T14:55:09.6745272+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 1.9.1+cb5afc3bb9bb01ebd75b57f89e8358b914ee2a49
+2026-03-11T14:55:09.6941045+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2026-03-11T14:55:09.6965691+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2026-03-11T14:55:09.6965824+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 14:55:09.635
+2026-03-11T14:55:09.6972931+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 23448
+2026-03-11T14:55:09.6973515+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 9.0.14
+2026-03-11T14:55:09.6973756+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\9.0.14\System.Private.CoreLib.dll
+2026-03-11T14:55:09.6973901+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2026-03-11T14:55:09.6974955+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Tests\bin\Debug\net9.0\Tests.dll
+2026-03-11T14:55:09.6976698+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Tests\bin\Debug\net9.0\Log --results-directory C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\TestResults --client-port 60560'
+2026-03-11T14:55:09.6999123+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2026-03-11T14:55:09.7278794+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2026-03-11T14:55:09.7596743+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable: 
+2026-03-11T14:55:10.0594855+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: '30ea7c6e-dd24-4152-a360-1387158cd41d' Version: '3.2.2' DisplayName: 'xUnit.net v3 Microsoft.Testing.Platform test framework' Description: 'xUnit.net v3 Microsoft.Testing.Platform test framework'
+2026-03-11T14:55:10.0729685+00:00 xUnit.net INFORMATION xUnit.net v3 In-Process Runner v3.2.2+728c1dce01 (64-bit .NET 9.0.14)
+2026-03-11T14:55:10.1220945+00:00 xUnit.net INFORMATION   Discovering: Tests
+2026-03-11T14:55:10.1763734+00:00 xUnit.net INFORMATION   Discovered:  Tests
+2026-03-11T14:55:10.2020529+00:00 xUnit.net INFORMATION   Starting:    Tests
+2026-03-11T14:55:11.1319455+00:00 xUnit.net ERROR     DatabaseConnectionTest.CanConnectToDatabase [FAIL]
+2026-03-11T14:55:11.1327553+00:00 xUnit.net INFORMATION       Assert.True() Failure
+2026-03-11T14:55:11.1327808+00:00 xUnit.net INFORMATION       Expected: True
+2026-03-11T14:55:11.1327827+00:00 xUnit.net INFORMATION       Actual:   False
+2026-03-11T14:55:11.1332714+00:00 xUnit.net INFORMATION       Stack Trace:
+2026-03-11T14:55:11.1337691+00:00 xUnit.net INFORMATION         C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Tests\Integration\Infrastructure.dbtest.cs(27,0): at DatabaseConnectionTest.CanConnectToDatabase()
+2026-03-11T14:55:11.1337966+00:00 xUnit.net INFORMATION         C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Tests\Integration\Infrastructure.dbtest.cs(27,0): at DatabaseConnectionTest.CanConnectToDatabase()
+2026-03-11T14:55:11.1337997+00:00 xUnit.net INFORMATION         --- End of stack trace from previous location ---
+2026-03-11T14:55:11.1523768+00:00 xUnit.net INFORMATION   Finished:    Tests (ID = '01b884c3763759537e0f6d2c8a3b0bc3afbdbc757e367a8c0d8ea5db22d2d137')
+2026-03-11T14:55:11.1574396+00:00 xUnit.net INFORMATION === TEST EXECUTION SUMMARY ===
+2026-03-11T14:55:11.1632801+00:00 xUnit.net INFORMATION    Tests  Total: 1, Errors: 0, Failed: 1, Skipped: 0, Not Run: 0, Time: 0,954s

@@ -19,6 +19,7 @@
     <Import Project="$(NuGetPackageRoot)microsoft.testing.extensions.telemetry\1.9.1\buildTransitive\net9.0\Microsoft.Testing.Extensions.Telemetry.props" Condition="Exists('$(NuGetPackageRoot)microsoft.testing.extensions.telemetry\1.9.1\buildTransitive\net9.0\Microsoft.Testing.Extensions.Telemetry.props')" />
     <Import Project="$(NuGetPackageRoot)xunit.v3.core.mtp-v1\3.2.2\buildTransitive\xunit.v3.core.mtp-v1.props" Condition="Exists('$(NuGetPackageRoot)xunit.v3.core.mtp-v1\3.2.2\buildTransitive\xunit.v3.core.mtp-v1.props')" />
     <Import Project="$(NuGetPackageRoot)xunit.runner.visualstudio\3.1.5\build\net8.0\xunit.runner.visualstudio.props" Condition="Exists('$(NuGetPackageRoot)xunit.runner.visualstudio\3.1.5\build\net8.0\xunit.runner.visualstudio.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\3.3.4\buildTransitive\Microsoft.CodeAnalysis.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\3.3.4\buildTransitive\Microsoft.CodeAnalysis.Analyzers.props')" />
     <Import Project="$(NuGetPackageRoot)refit\10.0.1\buildTransitive\netstandard2.0\refit.props" Condition="Exists('$(NuGetPackageRoot)refit\10.0.1\buildTransitive\netstandard2.0\refit.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\9.0.1\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\9.0.1\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.testplatform.testhost\17.14.1\build\net8.0\Microsoft.TestPlatform.TestHost.props" Condition="Exists('$(NuGetPackageRoot)microsoft.testplatform.testhost\17.14.1\build\net8.0\Microsoft.TestPlatform.TestHost.props')" />
@@ -29,6 +30,8 @@
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\peter\.nuget\packages\xunit.analyzers\1.27.0</Pkgxunit_analyzers>
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\peter\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.4</PkgMicrosoft_CodeAnalysis_Analyzers>
+    <PkgGraphQL_Analyzers Condition=" '$(PkgGraphQL_Analyzers)' == '' ">C:\Users\peter\.nuget\packages\graphql.analyzers\8.2.1</PkgGraphQL_Analyzers>
     <PkgGrpc_Tools Condition=" '$(PkgGrpc_Tools)' == '' ">C:\Users\peter\.nuget\packages\grpc.tools\2.72.0</PkgGrpc_Tools>
     <PkgAspire_Hosting_AppHost Condition=" '$(PkgAspire_Hosting_AppHost)' == '' ">C:\Users\peter\.nuget\packages\aspire.hosting.apphost\13.1.0</PkgAspire_Hosting_AppHost>
   </PropertyGroup>

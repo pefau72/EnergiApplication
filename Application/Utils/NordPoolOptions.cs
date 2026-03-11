@@ -10,8 +10,9 @@
     }
 
 
-public sealed class NordPoolSsoOptions { public string ClientId { get; init; } = default!;
-        public string ClientSecret { get; init; } = default!; 
+public sealed class NordPoolSsoOptions { 
+        public string username { get; init; } = default!;
+        public string password { get; init; } = default!; 
         public string Scope { get; init; } = "api.read"; 
         public string BaseUrl { get; init; } = default!;
     }
