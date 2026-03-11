@@ -20,8 +20,8 @@ public partial class CurveOrderTests
     {
         var auction = new Auction
         {
-            Id = "12129",
-            Contracts = new List<Contract>
+            id = "12129",
+            contracts = new List<Contract>
         {
             new Contract { Id = "20230" },
             new Contract { Id = "20422" }

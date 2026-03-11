@@ -42,7 +42,6 @@
     <Folder Include="Calculation\" />
     <Folder Include="Component\" />
     <Folder Include="E2E\" />
-    <Folder Include="Contract\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -51,5 +50,10 @@
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
     <ProjectReference Include="..\Presentation\Presentation.csproj" />
   </ItemGroup>
+
+	<ItemGroup>
+		<None Update="Tests\auctions.json" CopyToOutputDirectory="Always" />
+	</ItemGroup>
+
 
 </Project>

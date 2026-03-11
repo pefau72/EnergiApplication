@@ -1,0 +1,16 @@
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Infrastructure\bin\Debug\net9.0\04_Infrastructure.deps.json
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Infrastructure\bin\Debug\net9.0\04_Infrastructure.dll
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Infrastructure\bin\Debug\net9.0\04_Infrastructure.pdb
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Infrastructure\bin\Debug\net9.0\03_Domain.dll
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Infrastructure\bin\Debug\net9.0\03_Domain.pdb
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Infrastructure\obj\Debug\net9.0\04_Infrastructure.csproj.AssemblyReference.cache
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Infrastructure\obj\Debug\net9.0\04_Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Infrastructure\obj\Debug\net9.0\04_Infrastructure.AssemblyInfoInputs.cache
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Infrastructure\obj\Debug\net9.0\04_Infrastructure.AssemblyInfo.cs
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Infrastructure\obj\Debug\net9.0\04_Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Infrastructure\obj\Debug\net9.0\04_Infrastructure.sourcelink.json
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Infrastructure\obj\Debug\net9.0\04_Infra.F3FDCCAB.Up2Date
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Infrastructure\obj\Debug\net9.0\04_Infrastructure.dll
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Infrastructure\obj\Debug\net9.0\refint\04_Infrastructure.dll
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Infrastructure\obj\Debug\net9.0\04_Infrastructure.pdb
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Infrastructure\obj\Debug\net9.0\ref\04_Infrastructure.dll

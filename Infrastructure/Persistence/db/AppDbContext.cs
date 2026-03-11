@@ -41,7 +41,7 @@ public class AppDbContext : DbContext
 
         modelBuilder.Entity<AuctionEntity>(entity =>
             {
-                entity.ToTable("auctions");
+                entity.ToTable("auctions"); // This is where the table names in the db are set.
                 entity.HasKey(x => x.Id);
             });
         

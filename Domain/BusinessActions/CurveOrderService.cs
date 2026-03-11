@@ -13,7 +13,7 @@
             {
                 AreaCode = areaCode,
                 Portfolio = portfolio,
-                AuctionId = auction.Id,
+                AuctionId = auction.id,
                 Comment = $"CurveOrder_{areaCode}_{portfolio}",
                 Curves = GenerateCurves(auction, minPrice, maxPrice).ToList()
             };

@@ -14,38 +14,38 @@
         {
             Console.WriteLine("Open auctions:");
 
-            foreach (var auction in auctions.Where(x => x.State == Auction.AuctionStateType.Open))
-                Console.WriteLine(auction.Id);
+            foreach (var auction in auctions.Where(x => x.state == Auction.AuctionStateType.Open))
+                Console.WriteLine(auction.id);
 
             Console.WriteLine();
 
             Console.WriteLine("Closed auctions:");
 
-            foreach (var auction in auctions.Where(x => x.State == Auction.AuctionStateType.Closed))
-                Console.WriteLine(auction.Id);
+            foreach (var auction in auctions.Where(x => x.state == Auction.AuctionStateType.Closed))
+                Console.WriteLine(auction.id);
 
             Console.WriteLine();
 
 
             Console.WriteLine("ResultsPublished auctions:");
 
-            foreach (var auction in auctions.Where(x => x.State == Auction.AuctionStateType.Resultspublished))
-                Console.WriteLine(auction.Id);
+            foreach (var auction in auctions.Where(x => x.state == Auction.AuctionStateType.Resultspublished))
+                Console.WriteLine(auction.id);
         }
 
         public static void WriteDetailedAuctionInfo(Auction auction)
         {
-            Console.WriteLine($"Selected auction: {auction.Id}");
+            Console.WriteLine($"Selected auction: {auction.id}");
             Console.WriteLine($"Supported currencies with Min and Max prices are following:");
 
-            foreach (var currencyInfo in auction.Currencies)
+            foreach (var currencyInfo in auction.currencies)
             {
                 WriteCurrencyInfo(currencyInfo);
             }
 
             Console.WriteLine($"Available portfolios for selected auction are following:");
 
-            foreach (var portfolio in auction.Portfolios)
+            foreach (var portfolio in auction.portfolios)
             {
                 WritePortfolioInfo(portfolio);
             }
@@ -134,7 +134,7 @@
 
         public static CommandType RequestSelectedAuctionCommand(Auction auction)
         {
-            if (auction.State == Auction.AuctionStateType.Open)
+            if (auction.state == Auction.AuctionStateType.Open)
             {
                 Console.WriteLine(
                     "Available options: \"Orders\", \"PlaceCurve\", \"GetAllCurveOrderVersions\",  \"Auctions\", \"AuctionContracts\",   \"Exit\". Specify one of the options:");
@@ -145,7 +145,7 @@
                 return command;
             }
 
-            if (auction.State == Auction.AuctionStateType.Resultspublished)
+            if (auction.state == Auction.AuctionStateType.Resultspublished)
             {
                 Console.WriteLine(
                     "Available options: \"Orders\", \"Trades\", \"Prices\", \"PortfolioVolumes\", \"Auctions\", \"AuctionContracts\",  \"Exit\". Specify one of the options:");
@@ -156,7 +156,7 @@
                 return command;
             }
 
-            if (auction.State == Auction.AuctionStateType.Closed)
+            if (auction.state == Auction.AuctionStateType.Closed)
             {
                 Console.WriteLine("Available options: \"Orders\", \"Auctions\", \"AuctionContracts\",  \"Exit\". Specify one of the options:");
                 CommandType command;

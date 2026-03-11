@@ -1,0 +1,54 @@
+[
+  {
+    "id": "string",
+    "name": "string",
+    "state": "Open",
+    "closeForBidding": "2026-03-11T18:48:20.572Z",
+    "deliveryStart": "2026-03-11T18:48:20.572Z",
+    "deliveryEnd": "2026-03-11T18:48:20.572Z",
+    "volumeAllocation": true,
+    "availableOrderTypes": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "currencies": [
+      {
+        "currencyCode": "string",
+        "minPrice": 0,
+        "maxPrice": 0
+      }
+    ],
+    "contracts": [
+      {
+        "id": "string",
+        "deliveryStart": "2026-03-11T18:48:20.572Z",
+        "deliveryEnd": "2026-03-11T18:48:20.572Z"
+      }
+    ],
+    "portfolios": [
+      {
+        "name": "string",
+        "id": "string",
+        "currency": "string",
+        "companyId": "string",
+        "companyName": "string",
+        "permission": "string",
+        "areas": [
+          {
+            "code": "string",
+            "name": "string",
+            "eicCode": "string",
+            "curveMinVolumeLimit": 0,
+            "curveMaxVolumeLimit": 0,
+            "isVolumeLimitsSet": true,
+            "auctionTradingResolution": [
+              0
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

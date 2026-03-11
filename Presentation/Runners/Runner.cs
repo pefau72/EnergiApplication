@@ -103,7 +103,7 @@ public class Runner
 
         Console.WriteLine("Select an auction for further requests:");
         var selectedAuctionId = Console.ReadLine();
-        _selectedAuction = _availableAuctions.First(x => x.Id == selectedAuctionId);
+        _selectedAuction = _availableAuctions.First(x => x.id == selectedAuctionId);
         ConsoleHelper.WriteDetailedAuctionInfo(_selectedAuction);
     }
     private async Task HandlePlaceCurveCommand()
@@ -140,8 +140,8 @@ public class Runner
     }
     private async Task HandleTradesCommand()
     {
-        Console.WriteLine($"Fetching trades for auction {_selectedAuction.Id}...");
-        var trades = await _apiClient.GetTradesAsync(_selectedAuction.Id, null, null); 
+        Console.WriteLine($"Fetching trades for auction {_selectedAuction.id}...");
+        var trades = await _apiClient.GetTradesAsync(_selectedAuction.id, null, null); 
         ConsoleHelper.WriteTradesInfo(trades);
     }        
         

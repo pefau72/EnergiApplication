@@ -18,8 +18,8 @@ public partial class CurveOrderTests
     {
         var auction = new Auction // Mock ikke nødvendig, da vi ikke kalder nogen metoder på
         {
-            Id = "42",
-            Contracts = new List<Contract>
+            id = "42",
+            contracts = new List<Contract>
         {
             new Contract { Id = "100" },
             new Contract { Id = "200" }
@@ -43,14 +43,14 @@ public partial class CurveOrderTests
         // Assert: top-level fields
         Assert.Equal(areaCode, result.AreaCode);
         Assert.Equal(portfolio, result.Portfolio);
-        Assert.Equal(auction.Id, result.AuctionId);
+        Assert.Equal(auction.id, result.AuctionId);
         Assert.Equal("CurveOrder_DK1_P1", result.Comment);
 
         // Assert: curves created correctly
-        Assert.Equal(auction.Contracts.Count, result.Curves.Count);
+        Assert.Equal(auction.contracts.Count, result.Curves.Count);
 
         // Assert: each curve matches its contract
-        foreach (var contract in auction.Contracts)
+        foreach (var contract in auction.contracts)
         {
             var curve = result.Curves.Single(c => c.ContractId == contract.Id);
 

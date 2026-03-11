@@ -2,16 +2,20 @@
 {
         public class Auction
     {
-        public enum AuctionStateType { Open,Closed,Resultspublished,Cancelled };
-        public string Id { get; set; }
+        public string id { get; set; }
+          
         
-        public string Name { get; set; }
-        public AuctionStateType State { get; set; }
-        public DateTime CloseForBidding { get; set; }
-        public DateTime DeliveryStart { get; set; }
-        public DateTime DeliveryEnd { get; set; }
-        public List<Contract> Contracts { get; set; }
-        public List<Currency> Currencies { get; set; }
-        public List<Portfolio> Portfolios { get; set; }
+        public string name { get; set; }
+        public enum AuctionStateType { Open, Closed, Resultspublished, Cancelled };
+        public AuctionStateType state { get; set; }
+        public DateTime closeForBidding { get; set; }
+        public DateTime deliveryStart { get; set; }
+        public DateTime deliveryEnd { get; set; }
+        public bool volumeAllocation { get; set; }
+        public List<OrderType> availableOrderTypes { get; set; }
+        public List<Currency> currencies { get; set; }
+        public List<Contract> contracts { get; set; }
+        
+        public List<Portfolio> portfolios { get; set; }
     }
 }

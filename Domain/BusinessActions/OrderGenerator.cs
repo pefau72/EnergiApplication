@@ -11,7 +11,7 @@
             {
                 AreaCode = areaCode,
                 Portfolio = portfolio,
-                AuctionId = auction.Id,
+                AuctionId = auction.id,
                 Comment = $"CurveOrder_{areaCode}_{portfolio}",
                 Curves = GenerateCurves(auction, minPrice, maxPrice).ToList()
             };
@@ -23,7 +23,7 @@
         public static IEnumerable<Curve> GenerateCurves(Auction auction, double minPrice, double maxPrice)
         {
             var curves = new List<Curve>();
-            foreach (var contract in auction.Contracts)
+            foreach (var contract in auction.contracts)
             {
                 var curvePoints = GenerateCurvePoints(minPrice, maxPrice);
                 curves.Add(new Curve

@@ -1,0 +1,16 @@
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Application\bin\Debug\net9.0\02_Application.deps.json
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Application\bin\Debug\net9.0\02_Application.dll
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Application\bin\Debug\net9.0\02_Application.pdb
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Application\bin\Debug\net9.0\03_Domain.dll
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Application\bin\Debug\net9.0\03_Domain.pdb
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Application\obj\Debug\net9.0\02_Application.csproj.AssemblyReference.cache
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Application\obj\Debug\net9.0\02_Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Application\obj\Debug\net9.0\02_Application.AssemblyInfoInputs.cache
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Application\obj\Debug\net9.0\02_Application.AssemblyInfo.cs
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Application\obj\Debug\net9.0\02_Application.csproj.CoreCompileInputs.cache
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Application\obj\Debug\net9.0\02_Application.sourcelink.json
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Application\obj\Debug\net9.0\02_Appli.8BE89E16.Up2Date
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Application\obj\Debug\net9.0\02_Application.dll
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Application\obj\Debug\net9.0\refint\02_Application.dll
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Application\obj\Debug\net9.0\02_Application.pdb
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Application\obj\Debug\net9.0\ref\02_Application.dll

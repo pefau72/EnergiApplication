@@ -1,0 +1,44 @@
+2026-03-11T19:20:20.5883310+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 1.9.1+cb5afc3bb9bb01ebd75b57f89e8358b914ee2a49
+2026-03-11T19:20:20.6053963+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2026-03-11T19:20:20.6071717+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2026-03-11T19:20:20.6071816+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 19:20:20.541
+2026-03-11T19:20:20.6077076+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 26708
+2026-03-11T19:20:20.6077457+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 9.0.14
+2026-03-11T19:20:20.6077633+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\9.0.14\System.Private.CoreLib.dll
+2026-03-11T19:20:20.6077741+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2026-03-11T19:20:20.6078450+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Tests\bin\Debug\net9.0\Tests.dll
+2026-03-11T19:20:20.6079606+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Tests\bin\Debug\net9.0\Log --results-directory C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\TestResults --client-port 50294'
+2026-03-11T19:20:20.6099807+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2026-03-11T19:20:20.6303619+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2026-03-11T19:20:20.6451198+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable: 
+2026-03-11T19:20:20.8971342+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: '30ea7c6e-dd24-4152-a360-1387158cd41d' Version: '3.2.2' DisplayName: 'xUnit.net v3 Microsoft.Testing.Platform test framework' Description: 'xUnit.net v3 Microsoft.Testing.Platform test framework'
+2026-03-11T19:20:20.9113741+00:00 xUnit.net INFORMATION xUnit.net v3 In-Process Runner v3.2.2+728c1dce01 (64-bit .NET 9.0.14)
+2026-03-11T19:20:20.9699888+00:00 xUnit.net INFORMATION   Discovering: Tests
+2026-03-11T19:20:21.0184191+00:00 xUnit.net INFORMATION   Discovered:  Tests
+2026-03-11T19:20:21.0389436+00:00 xUnit.net INFORMATION   Starting:    Tests
+2026-03-11T19:20:22.3068263+00:00 xUnit.net ERROR     NordPoolContractTests.PortfolioArea_Deserializes_Correctly [FAIL]
+2026-03-11T19:20:22.3073082+00:00 xUnit.net INFORMATION       System.IO.DirectoryNotFoundException : Could not find a part of the path 'C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Tests\bin\Debug\net9.0\Tests\auctions.json'.
+2026-03-11T19:20:22.3076890+00:00 xUnit.net INFORMATION       Stack Trace:
+2026-03-11T19:20:22.3080746+00:00 xUnit.net INFORMATION            at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+2026-03-11T19:20:22.3080979+00:00 xUnit.net INFORMATION            at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+2026-03-11T19:20:22.3081090+00:00 xUnit.net INFORMATION            at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+2026-03-11T19:20:22.3081194+00:00 xUnit.net INFORMATION            at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+2026-03-11T19:20:22.3081254+00:00 xUnit.net INFORMATION            at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+2026-03-11T19:20:22.3081294+00:00 xUnit.net INFORMATION            at System.IO.File.ReadAllText(String path, Encoding encoding)
+2026-03-11T19:20:22.3081487+00:00 xUnit.net INFORMATION         C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Tests\Contract\Deserialize.cs(17,0): at NordPoolContractTests.PortfolioArea_Deserializes_Correctly()
+2026-03-11T19:20:22.3081604+00:00 xUnit.net INFORMATION            at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+2026-03-11T19:20:22.3081665+00:00 xUnit.net INFORMATION            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2026-03-11T19:20:24.3960054+00:00 xUnit.net ERROR     Tests.Integration.RetrieveTokenTest.RetrieveTokenTest_imp [FAIL]
+2026-03-11T19:20:24.3960402+00:00 xUnit.net INFORMATION       System.InvalidOperationException : INordPoolSsoClient doesn't look like a Refit interface. Make sure it has at least one method with a Refit HTTP method attribute and Refit is installed in the project.
+2026-03-11T19:20:24.3960668+00:00 xUnit.net INFORMATION       Stack Trace:
+2026-03-11T19:20:24.3960983+00:00 xUnit.net INFORMATION         c:\temp\releaser\refit\Refit\RestService.cs(188,0): at Refit.RestService.GetGeneratedType(Type refitInterfaceType)
+2026-03-11T19:20:24.3961088+00:00 xUnit.net INFORMATION            at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+2026-03-11T19:20:24.3961155+00:00 xUnit.net INFORMATION         c:\temp\releaser\refit\Refit\RestService.cs(79,0): at Refit.RestService.For(Type refitInterfaceType, HttpClient client, IRequestBuilder builder)
+2026-03-11T19:20:24.3961218+00:00 xUnit.net INFORMATION         c:\temp\releaser\refit\Refit\RestService.cs(20,0): at Refit.RestService.For[T](HttpClient client, IRequestBuilder`1 builder)
+2026-03-11T19:20:24.4028361+00:00 xUnit.net INFORMATION         c:\temp\releaser\refit\Refit\RestService.cs(33,0): at Refit.RestService.For[T](HttpClient client, RefitSettings settings)
+2026-03-11T19:20:24.4028979+00:00 xUnit.net INFORMATION         c:\temp\releaser\refit\Refit\RestService.cs(42,0): at Refit.RestService.For[T](HttpClient client)
+2026-03-11T19:20:24.4029128+00:00 xUnit.net INFORMATION         C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Tests\Integration\RetrieveTokenTest.cs(32,0): at Tests.Integration.RetrieveTokenTest.RetrieveTokenTest_imp()
+2026-03-11T19:20:24.4029162+00:00 xUnit.net INFORMATION         --- End of stack trace from previous location ---
+2026-03-11T19:20:24.9566636+00:00 xUnit.net INFORMATION   Finished:    Tests (ID = '01b884c3763759537e0f6d2c8a3b0bc3afbdbc757e367a8c0d8ea5db22d2d137')
+2026-03-11T19:20:24.9618617+00:00 xUnit.net INFORMATION === TEST EXECUTION SUMMARY ===
+2026-03-11T19:20:24.9680469+00:00 xUnit.net INFORMATION    Tests  Total: 8, Errors: 0, Failed: 2, Skipped: 0, Not Run: 0, Time: 3,921s

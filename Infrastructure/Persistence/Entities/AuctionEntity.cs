@@ -6,7 +6,7 @@ using EnergiApp.Domain;
 namespace EnergiApp.Infrastructure.Persistence.Entities
 {
     public class AuctionEntity
-    {
+    {   // Each of these elements should correspond to a field in the auctions table in the db.
         public Guid Id { get; set; }
         public string Name { get; set; }
         public AuctionStateType State { get; set; }

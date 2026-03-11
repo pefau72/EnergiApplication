@@ -1,0 +1,25 @@
+{
+  "curves": [
+    {
+      "contractId": "NPIDA_1-20181102-01",
+      "curvePoints": [
+        {
+          "price": -500,
+          "volume": 100
+        },
+        {
+          "price": 3000,
+          "volume": -80
+        },
+        {
+          "price": 4000,
+          "volume": -100
+        }
+      ]
+    }
+  ],
+  "auctionId": "NPIDA_1-20181101",
+  "portfolio": "Test Automation Auctions IDA DE Portfolio 8",
+  "areaCode": "TBW",
+  "comment": null
+}

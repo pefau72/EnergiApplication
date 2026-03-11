@@ -1,0 +1,6 @@
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Application\obj\Debug\net10.0\02_Application.csproj.AssemblyReference.cache
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Application\obj\Debug\net10.0\02_Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Application\obj\Debug\net10.0\02_Application.AssemblyInfoInputs.cache
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Application\obj\Debug\net10.0\02_Application.AssemblyInfo.cs
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Application\obj\Debug\net10.0\02_Application.csproj.CoreCompileInputs.cache
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Application\obj\Debug\net10.0\02_Application.sourcelink.json

@@ -9,15 +9,15 @@ namespace EnergiApp.Infrastructure.Persistence.Mappers
         {
             return new Auction
             {
-                Id = entity.Id.ToString(),
-                Name = entity.Name,
-                State = (Auction.AuctionStateType)entity.State,
-                CloseForBidding = entity.CloseForBidding,
-                DeliveryStart = entity.DeliveryStart,
-                DeliveryEnd = entity.DeliveryEnd,
-                Contracts = entity.Contracts?.Select(c => c!.ToDomain()).ToList() ?? new List<Contract>(), 
-                Currencies = entity.Currencies?.Select(c => c!.ToDomain()).ToList() ?? new List<Currency>(),
-                Portfolios = entity.Portfolios?.Select(p => p!.ToDomain()).ToList() ?? new List<Portfolio>()
+                id = entity.Id.ToString(),
+                name = entity.Name,
+                state = (Auction.AuctionStateType)entity.State,
+                closeForBidding = entity.CloseForBidding,
+                deliveryStart = entity.DeliveryStart,
+                deliveryEnd = entity.DeliveryEnd,
+                contracts = entity.Contracts?.Select(c => c!.ToDomain()).ToList() ?? new List<Contract>(), 
+                currencies = entity.Currencies?.Select(c => c!.ToDomain()).ToList() ?? new List<Currency>(),
+                portfolios = entity.Portfolios?.Select(p => p!.ToDomain()).ToList() ?? new List<Portfolio>()
             };
         }
 
@@ -26,15 +26,15 @@ namespace EnergiApp.Infrastructure.Persistence.Mappers
         {
             return new AuctionEntity
             {
-                Id = Guid.Parse(domain.Id),
-                Name = domain.Name,
-                State = (AuctionStateType)domain.State,
-                CloseForBidding = domain.CloseForBidding,
-                DeliveryStart = domain.DeliveryStart,
-                DeliveryEnd = domain.DeliveryEnd,
-                Contracts = domain.Contracts?.Select(c => c!.ToEntity()).ToList() ?? new List<ContractEntity>(),
-                Currencies = domain.Currencies?.Select(c => c!.ToEntity()).ToList() ?? new List<CurrencyEntity>(),
-                Portfolios = domain.Portfolios?.Select(p => p!.ToEntity()).ToList() ?? new List<PortfolioEntity>()
+                Id = Guid.Parse(domain.id),
+                Name = domain.name,
+                State = (AuctionStateType)domain.state,
+                CloseForBidding = domain.closeForBidding,
+                DeliveryStart = domain.deliveryStart,
+                DeliveryEnd = domain.deliveryEnd,
+                Contracts = domain.contracts?.Select(c => c!.ToEntity()).ToList() ?? new List<ContractEntity>(),
+                Currencies = domain.currencies?.Select(c => c!.ToEntity()).ToList() ?? new List<CurrencyEntity>(),
+                Portfolios = domain.portfolios?.Select(p => p!.ToEntity()).ToList() ?? new List<PortfolioEntity>()
             };
         }
 
