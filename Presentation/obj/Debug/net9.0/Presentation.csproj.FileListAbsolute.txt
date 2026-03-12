@@ -1,5 +1,4 @@
 C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\bin\Debug\net9.0\packages.config
-C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\bin\Debug\net9.0\appsettings.json
 C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\bin\Debug\net9.0\Runners\appsettings.json
 C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\bin\Debug\net9.0\Presentation.staticwebassets.endpoints.json
 C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\bin\Debug\net9.0\Presentation.exe
@@ -61,3 +60,10 @@ C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net9.
 C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net9.0\Presentation.genruntimeconfig.cache
 C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net9.0\ref\Presentation.dll
 C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\bin\Debug\net9.0\Microsoft.Extensions.Configuration.dll
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.dll
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\bin\Debug\net9.0\Microsoft.Extensions.Http.dll
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\bin\Debug\net9.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Presentation\bin\Debug\net9.0\Refit.HttpClientFactory.dll

@@ -6,20 +6,24 @@ using System;
 using System.Threading.Tasks;
 using Xunit;
 using EnergiApp.Presentation;
+using System.IO;
 
 public class DatabaseConnectionTest
 {
     [Fact]
     public async Task CanConnectToDatabase()
     {
+        var basePath = Path.GetFullPath(
+    Path.Combine(AppContext.BaseDirectory, "../../../../Presentation")
+);
+
         var config = new ConfigurationBuilder()
-        .AddJsonFile("appsettings.json")
-        .AddUserSecrets(typeof(EnergiApp.Presentation.Program).Assembly)
-        .Build();
+            .SetBasePath(basePath)
+            .AddJsonFile("appsettings.Development.json")
+            .AddUserSecrets(typeof(EnergiApp.Presentation.Program).Assembly)
+            .Build();
 
-        
-
-
+      
         var options = new DbContextOptionsBuilder<AppDbContext>()
             .UseNpgsql(config.GetConnectionString("Postgres"))
             .Options;

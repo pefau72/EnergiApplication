@@ -1,0 +1,35 @@
+2026-03-12T10:20:05.7018531+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 1.9.1+cb5afc3bb9bb01ebd75b57f89e8358b914ee2a49
+2026-03-12T10:20:05.7162917+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2026-03-12T10:20:05.7178844+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2026-03-12T10:20:05.7178942+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 10:20:05.673
+2026-03-12T10:20:05.7184688+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 7044
+2026-03-12T10:20:05.7185067+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 9.0.14
+2026-03-12T10:20:05.7185224+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\9.0.14\System.Private.CoreLib.dll
+2026-03-12T10:20:05.7185325+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2026-03-12T10:20:05.7185944+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Tests\bin\Debug\net9.0\Tests.dll
+2026-03-12T10:20:05.7187198+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Tests\bin\Debug\net9.0\Log --results-directory C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\TestResults --client-port 64320'
+2026-03-12T10:20:05.7202772+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2026-03-12T10:20:05.7399054+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2026-03-12T10:20:05.7535809+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable: 
+2026-03-12T10:20:05.9766645+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: '30ea7c6e-dd24-4152-a360-1387158cd41d' Version: '3.2.2' DisplayName: 'xUnit.net v3 Microsoft.Testing.Platform test framework' Description: 'xUnit.net v3 Microsoft.Testing.Platform test framework'
+2026-03-12T10:20:05.9857898+00:00 xUnit.net INFORMATION xUnit.net v3 In-Process Runner v3.2.2+728c1dce01 (64-bit .NET 9.0.14)
+2026-03-12T10:20:06.0286819+00:00 xUnit.net INFORMATION   Discovering: Tests
+2026-03-12T10:20:06.0801473+00:00 xUnit.net INFORMATION   Discovered:  Tests
+2026-03-12T10:20:06.1064888+00:00 xUnit.net INFORMATION   Starting:    Tests
+2026-03-12T10:20:06.4285819+00:00 xUnit.net ERROR     DatabaseConnectionTest.CanConnectToDatabase [FAIL]
+2026-03-12T10:20:06.4289442+00:00 xUnit.net INFORMATION       System.IO.FileNotFoundException : The configuration file 'appsettings.json' was not found and is not optional. The expected physical path was 'C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Tests\bin\Debug\net9.0\appsettings.json'.
+2026-03-12T10:20:06.4292298+00:00 xUnit.net INFORMATION       Stack Trace:
+2026-03-12T10:20:06.4295426+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.Configuration.FileConfigurationProvider.Load(Boolean reload)
+2026-03-12T10:20:06.4295628+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.Configuration.ConfigurationRoot..ctor(IList`1 providers)
+2026-03-12T10:20:06.4295668+00:00 xUnit.net INFORMATION            at Microsoft.Extensions.Configuration.ConfigurationBuilder.Build()
+2026-03-12T10:20:06.4295829+00:00 xUnit.net INFORMATION         C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Tests\Integration.Postgres\Infrastructure.dbtest.cs(15,0): at DatabaseConnectionTest.CanConnectToDatabase()
+2026-03-12T10:20:06.4295843+00:00 xUnit.net INFORMATION         --- End of stack trace from previous location ---
+2026-03-12T10:20:06.4648271+00:00 xUnit.net ERROR     Tests.Application.GetCorrectInjectionTest.GetCorrectConfiguration [FAIL]
+2026-03-12T10:20:06.4648557+00:00 xUnit.net INFORMATION       System.NullReferenceException : Object reference not set to an instance of an object.
+2026-03-12T10:20:06.4648659+00:00 xUnit.net INFORMATION       Stack Trace:
+2026-03-12T10:20:06.4648801+00:00 xUnit.net INFORMATION         C:\Users\peter\OneDrive\Dokumenter\OD_obj\EnergiApp\Tests\Unit\Presentation.GetCorrectInjectionTests.cs(40,0): at Tests.Application.GetCorrectInjectionTest.GetCorrectConfiguration()
+2026-03-12T10:20:06.4648862+00:00 xUnit.net INFORMATION            at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+2026-03-12T10:20:06.4648907+00:00 xUnit.net INFORMATION            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2026-03-12T10:20:07.8896923+00:00 xUnit.net INFORMATION   Finished:    Tests (ID = '01b884c3763759537e0f6d2c8a3b0bc3afbdbc757e367a8c0d8ea5db22d2d137')
+2026-03-12T10:20:07.8984648+00:00 xUnit.net INFORMATION === TEST EXECUTION SUMMARY ===
+2026-03-12T10:20:07.9079824+00:00 xUnit.net INFORMATION    Tests  Total: 7, Errors: 0, Failed: 2, Skipped: 0, Not Run: 0, Time: 1,784s

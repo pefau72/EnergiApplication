@@ -7,96 +7,69 @@ using EnergiApp.Domain;
 using EnergiApp.Domain.Repositories;
 using EnergiApp.Presentation.Utils; // Utility classes and methods for the console application.
 using Microsoft.Extensions.Options; // used for accessing the configuration options 
-using Refit; // Refit is a REST library for .NET that allows you to define API clients using interfaces
+
 using System.Globalization;
 using EnergiApp.Domain.BusinessActions;
 
+namespace EnergiApp.Presentation.Runners; // This namespace contains the Runner class, which is responsible for executing the main logic of the console application.
 
 public class Runner
 {
-    private readonly NordPoolApiOptions _apiOptions; // Configuration to be populated from appsettings.json
-    private readonly NordPoolSsoOptions _ssoOptions; // Configuration to be populated from appsettings.json
-    private readonly IRefitClientFactory _refitFactory; // Factory for creating Refit REST API clients, which will be used to create instances of the API and SSO clients.
+    private readonly INordPoolApiClient _apiClient;
+    private readonly INordPoolSsoClient _ssoClient;
+    private readonly IAuctionRepository _auctionRepository;
+    private readonly NordPoolApiOptions _apiOptions;
+    private readonly NordPoolSsoOptions _ssoOptions;
 
-    private INordPoolApiClient _apiClient = default!; // client used to make requests to the NordPool API.
-    private INordPoolSsoClient _ssoClient = default!;                                                  // 
-        
-    private IEnumerable<Auction> _availableAuctions = default!; // auctions that are fetched for a date range. 
-    private Auction _selectedAuction = default!; // This variable holds the currently selected auction. 
-    private readonly IAuctionRepository _auctionRepository; // Auction repository for data access operations related to auctions.
+    private IEnumerable<Auction> _availableAuctions = default!;
+    private Auction _selectedAuction = default!;
 
     public Runner(
-        IOptions<NordPoolApiOptions> apiOptions, // IOptions<T> bliver injiceret af .NET DI-containeren
-        IOptions<NordPoolSsoOptions> ssoOptions,
+        INordPoolApiClient apiClient,
+        INordPoolSsoClient ssoClient,
         IAuctionRepository auctionRepository,
-        IRefitClientFactory refitFactory
-        ) // Constructor takes in the necessary dependencies through dependency injection.
-          // The configuration options for the API and SSO clients are injected using IOptions<T>,
-          // and the auction repository and Refit client factory are also injected for use in the application logic.
+        IOptions<NordPoolApiOptions> apiOptions,
+        IOptions<NordPoolSsoOptions> ssoOptions)
     {
+        _apiClient = apiClient;
+        _ssoClient = ssoClient;
+        _auctionRepository = auctionRepository;
         _apiOptions = apiOptions.Value;
         _ssoOptions = ssoOptions.Value;
-        _auctionRepository = auctionRepository;
-        _refitFactory = refitFactory;
-
-    }
-    public async Task RunAsync() // This is the main method that runs the application logic. 
-    {
-        InitializeClients(); 
-        Console.WriteLine($"Fetching auctions for today {DateTime.Today:d}..."); 
-        _availableAuctions = await _apiClient.GetAuctionsAsync(DateTime.UtcNow.Date, DateTime.UtcNow.Date.AddDays(1)); 
-            
-        HandleAuctionsCommand(); 
-            
-        var command = ConsoleHelper.RequestSelectedAuctionCommand(_selectedAuction); 
-            
-        while (command != CommandType.Exit) 
-        { 
-            switch (command) 
-            { 
-                case CommandType.PlaceCurve: await HandlePlaceCurveCommand();
-                    break;
-                case CommandType.Trades: await HandleTradesCommand();
-                    break;
-            } 
-            
-            command = ConsoleHelper.RequestSelectedAuctionCommand(_selectedAuction); }
-            
-        Console.WriteLine("Press any key to exit..."); Console.ReadLine();
     }
 
-    public interface IRefitClientFactory
+    public async Task RunAsync()
     {
-        T CreateClient<T>(HttpClient httpClient);
-    }
+        Console.WriteLine($"Fetching auctions for today {DateTime.Today:d}...");
 
-    public class RefitClientFactory : IRefitClientFactory
-    {
-        public T CreateClient<T>(HttpClient httpClient)
-            => RestService.For<T>(httpClient);
-    }
+        _availableAuctions = await _apiClient.GetAuctionsAsync(
+            DateTime.UtcNow.Date,
+            DateTime.UtcNow.Date.AddDays(1));
 
-    public void InitializeClients() // Internal giver åbenhed i samme assembly.
-    {
-        // Creating an instance of the SSO client using Refit, which will be used to authenticate and obtain tokens for API requests. Data provided from the configuration options.
-        _ssoClient = _refitFactory.CreateClient<INordPoolSsoClient>(
-            new HttpClient { BaseAddress = new Uri(_ssoOptions.BaseUrl) });
+        HandleAuctionsCommand();
 
-        // Creating an instance of the token provider, which will handle the retrieval and caching of access tokens for authenticating API requests.
-        // It takes the SSO client and its configuration options as parameters. 
-        var tokenProvider = new NordPoolTokenProvider(_ssoClient, Options.Create(_ssoOptions));
+        var command = ConsoleHelper.RequestSelectedAuctionCommand(_selectedAuction);
 
-        // Creating an instance of the API client using Refit, which will be used to make requests to the NordPool API.
-        // The HttpClient is configured with an AuthenticatedHttpClientHandler that uses the token provider to ensure that all requests are authenticated.
-        // The base URL for the API is provided from the configuration options.
-        _apiClient = _refitFactory.CreateClient<INordPoolApiClient>(
-            new HttpClient(new AuthenticatedHttpClientHandler(tokenProvider))
+        while (command != CommandType.Exit)
+        {
+            switch (command)
             {
-                BaseAddress = new Uri(_apiOptions.BaseUrl)
-            });
+                case CommandType.PlaceCurve:
+                    await HandlePlaceCurveCommand();
+                    break;
+
+                case CommandType.Trades:
+                    await HandleTradesCommand();
+                    break;
+            }
+
+            command = ConsoleHelper.RequestSelectedAuctionCommand(_selectedAuction);
+        }
+
+        Console.WriteLine("Press any key to exit...");
+        Console.ReadLine();
     }
 
-    
     private void HandleAuctionsCommand()
     {
         ConsoleHelper.WriteAuctionsInfo(_availableAuctions);

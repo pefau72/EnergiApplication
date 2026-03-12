@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ay4O5POP78w=",
+  "dgSpecHash": "H+t+rgUsYpE=",
   "success": true,
   "projectFilePath": "C:\\Users\\peter\\OneDrive\\Dokumenter\\OD_obj\\EnergiApp\\Tests\\Tests.csproj",
   "expectedPackageFiles": [
@@ -198,6 +198,7 @@
     "C:\\Users\\peter\\.nuget\\packages\\ramltoopenapiconverter.sourceonly\\0.11.0\\ramltoopenapiconverter.sourceonly.0.11.0.nupkg.sha512",
     "C:\\Users\\peter\\.nuget\\packages\\randomdatagenerator.net\\1.0.19\\randomdatagenerator.net.1.0.19.nupkg.sha512",
     "C:\\Users\\peter\\.nuget\\packages\\refit\\10.0.1\\refit.10.0.1.nupkg.sha512",
+    "C:\\Users\\peter\\.nuget\\packages\\refit.httpclientfactory\\10.0.1\\refit.httpclientfactory.10.0.1.nupkg.sha512",
     "C:\\Users\\peter\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\peter\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\peter\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",

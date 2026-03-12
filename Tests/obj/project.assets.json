@@ -3706,6 +3706,23 @@
           "buildTransitive/netstandard2.0/refit.targets": {}
         }
       },
+      "Refit.HttpClientFactory/10.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Http": "9.0.3",
+          "Refit": "10.0.1"
+        },
+        "compile": {
+          "lib/net9.0/Refit.HttpClientFactory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Refit.HttpClientFactory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
         "type": "package",
         "runtimeTargets": {
@@ -5751,6 +5768,7 @@
           "Domain": "1.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
           "Refit": "10.0.1",
+          "Refit.HttpClientFactory": "10.0.1",
           "Testcontainers.PostgreSql": "4.10.0"
         },
         "compile": {
@@ -5767,6 +5785,7 @@
           "Newtonsoft.Json": "13.0.4",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
           "Refit": "10.0.1",
+          "Refit.HttpClientFactory": "10.0.1",
           "Testcontainers.PostgreSql": "4.10.0"
         },
         "compile": {
@@ -5783,6 +5802,7 @@
           "Domain": "1.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
           "Refit": "10.0.1",
+          "Refit.HttpClientFactory": "10.0.1",
           "Testcontainers.PostgreSql": "4.10.0"
         },
         "compile": {
@@ -5800,6 +5820,7 @@
           "Infrastructure": "1.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
           "Refit": "10.0.1",
+          "Refit.HttpClientFactory": "10.0.1",
           "Testcontainers.PostgreSql": "4.10.0"
         },
         "compile": {
@@ -11315,6 +11336,30 @@
         "refit_logo.png"
       ]
     },
+    "Refit.HttpClientFactory/10.0.1": {
+      "sha512": "l8+mhfcBm0lSuNF9g1VTEwEHYQKtdqouOybpQkuxSWafSswRmit9COjmw6vd2Odj5k/qWjzzo8EbjYbyoV2dmQ==",
+      "type": "package",
+      "path": "refit.httpclientfactory/10.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE/LICENSE",
+        "README.md",
+        "lib/net10.0/Refit.HttpClientFactory.dll",
+        "lib/net10.0/Refit.HttpClientFactory.xml",
+        "lib/net462/Refit.HttpClientFactory.dll",
+        "lib/net462/Refit.HttpClientFactory.xml",
+        "lib/net8.0/Refit.HttpClientFactory.dll",
+        "lib/net8.0/Refit.HttpClientFactory.xml",
+        "lib/net9.0/Refit.HttpClientFactory.dll",
+        "lib/net9.0/Refit.HttpClientFactory.xml",
+        "lib/netstandard2.0/Refit.HttpClientFactory.dll",
+        "lib/netstandard2.0/Refit.HttpClientFactory.xml",
+        "refit.httpclientfactory.10.0.1.nupkg.sha512",
+        "refit.httpclientfactory.nuspec",
+        "refit_logo.png"
+      ]
+    },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
       "sha512": "7VSGO0URRKoMEAq0Sc9cRz8mb6zbyx/BZDEWhgPdzzpmFhkam3fJ1DAGWFXBI4nGlma+uPKpfuMQP5LXRnOH5g==",
       "type": "package",
@@ -15915,6 +15960,7 @@
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.4",
       "Presentation >= 1.0.0",
       "Refit >= 10.0.1",
+      "Refit.HttpClientFactory >= 10.0.1",
       "Testcontainers.PostgreSql >= 4.10.0",
       "WireMock.Net >= 1.25.0",
       "coverlet.collector >= 6.0.4",
@@ -16008,6 +16054,10 @@
             "version": "[9.0.4, )"
           },
           "Refit": {
+            "target": "Package",
+            "version": "[10.0.1, )"
+          },
+          "Refit.HttpClientFactory": {
             "target": "Package",
             "version": "[10.0.1, )"
           },

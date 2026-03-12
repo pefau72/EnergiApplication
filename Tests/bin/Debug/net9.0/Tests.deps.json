@@ -18,6 +18,7 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
           "Presentation": "1.0.0",
           "Refit": "10.0.1",
+          "Refit.HttpClientFactory": "10.0.1",
           "Testcontainers.PostgreSql": "4.10.0",
           "WireMock.Net": "1.25.0",
           "xunit.v3": "3.2.2",
@@ -2737,6 +2738,18 @@
           }
         }
       },
+      "Refit.HttpClientFactory/10.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Http": "9.0.11",
+          "Refit": "10.0.1"
+        },
+        "runtime": {
+          "lib/net9.0/Refit.HttpClientFactory.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.1.341"
+          }
+        }
+      },
       "Scriban.Signed/5.5.0": {
         "runtime": {
           "lib/net6.0/Scriban.Signed.dll": {
@@ -3206,6 +3219,7 @@
           "Domain": "1.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
           "Refit": "10.0.1",
+          "Refit.HttpClientFactory": "10.0.1",
           "Testcontainers.PostgreSql": "4.10.0"
         },
         "runtime": {
@@ -3220,6 +3234,7 @@
           "Newtonsoft.Json": "13.0.4",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
           "Refit": "10.0.1",
+          "Refit.HttpClientFactory": "10.0.1",
           "Testcontainers.PostgreSql": "4.10.0"
         },
         "runtime": {
@@ -3234,6 +3249,7 @@
           "Domain": "1.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
           "Refit": "10.0.1",
+          "Refit.HttpClientFactory": "10.0.1",
           "Testcontainers.PostgreSql": "4.10.0"
         },
         "runtime": {
@@ -3249,6 +3265,7 @@
           "Infrastructure": "1.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4",
           "Refit": "10.0.1",
+          "Refit.HttpClientFactory": "10.0.1",
           "Testcontainers.PostgreSql": "4.10.0"
         },
         "runtime": {
@@ -4539,6 +4556,13 @@
       "sha512": "sha512-AprsDMXFRU2k+sXZYfiFLYueP7ovEvoGzC2ylAV9i6xh6rcGJOgLiZdugxnEpIrH6WNbiR8OnOrAr06/pZMQaQ==",
       "path": "refit/10.0.1",
       "hashPath": "refit.10.0.1.nupkg.sha512"
+    },
+    "Refit.HttpClientFactory/10.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-l8+mhfcBm0lSuNF9g1VTEwEHYQKtdqouOybpQkuxSWafSswRmit9COjmw6vd2Odj5k/qWjzzo8EbjYbyoV2dmQ==",
+      "path": "refit.httpclientfactory/10.0.1",
+      "hashPath": "refit.httpclientfactory.10.0.1.nupkg.sha512"
     },
     "Scriban.Signed/5.5.0": {
       "type": "package",

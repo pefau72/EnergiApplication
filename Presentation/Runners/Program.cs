@@ -1,15 +1,9 @@
-﻿// This is the presentation layer of the application, responsible for setting up the console application,
-//
-//
-using EnergiApp.Application.Utils;
-using EnergiApp.Domain.Repositories;
-using EnergiApp.Domain.Services;
-using EnergiApp.Infrastructure.Persistence.db;
-using EnergiApp.Infrastructure.Persistence.Repositories;
-using Microsoft.EntityFrameworkCore;
-using static Runner;
-
+﻿using EnergiApp.Application;
+using EnergiApp.Infrastructure;
+using EnergiApp.Presentation.Runners;
 namespace EnergiApp.Presentation;
+
+
 
 public class Program
 {
@@ -17,18 +11,10 @@ public class Program
     {
         var builder = Host.CreateApplicationBuilder(args);
 
-        builder.Services.Configure<NordPoolApiOptions>(builder.Configuration.GetSection("NordPoolApi"));
-        builder.Services.Configure<NordPoolSsoOptions>(builder.Configuration.GetSection("NordPoolSso"));
-        builder.Services.AddDbContext<AppDbContext>(options =>
-            options.UseNpgsql(builder.Configuration.GetConnectionString("Postgres")));
-
-        builder.Services.AddScoped<IAuctionRepository, AuctionRepository>();
-        builder.Services.AddScoped<ITradeRepository, TradeRepository>();
-        builder.Services.AddScoped<ICurveOrderRepository, CurveOrderRepository>();
+        builder.Services.AddApplication(builder.Configuration);
+        builder.Services.AddInfrastructure(builder.Configuration);
 
         builder.Services.AddSingleton<Runner>();
-        builder.Services.AddSingleton<ICurveOrderService, CurveOrderService>();
-        builder.Services.AddSingleton<IRefitClientFactory, RefitClientFactory>();
 
         var app = builder.Build();
 
